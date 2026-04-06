@@ -1,0 +1,29 @@
+# Site Settings
+title: "Karan Dave | Digital Strategist"
+description: "BBA Student & Marketing Intern at Shaligram Infotech"
+url: "https://karandave211.github.io"
+baseurl: ""
+
+# Theme Setup
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "air" # This is a clean, white/blue professional skin
+
+# SEO & Social
+locale: "en-IN"
+footer:
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/karandave211/"
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "single"
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
