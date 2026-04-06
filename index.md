@@ -1,4 +1,4 @@
-# \---
+\---
 
 layout: home
 
@@ -17,3 +17,5 @@ excerpt: "BBA Student at Shaligram Infotech | Exploring AI, Marketing, and EV Re
 \---
 
 Welcome! I'm Karan, a Digital Marketing enthusiast based in Ahmedabad. This portfolio showcases my work in hyper-personalized retail, strategic management, and my ongoing dissertation on Electric Vehicles.
+
+### Recent Posts
