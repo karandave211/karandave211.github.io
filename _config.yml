@@ -6,7 +6,7 @@ baseurl: ""
 
 # Theme Setup
 remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "air" # This is a clean, white/blue professional skin
+minimal_mistakes_skin: "dark" # This is a clean, white/blue professional skin
 
 # SEO & Social
 locale: "en-IN"
@@ -14,7 +14,7 @@ footer:
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/karandave211/"
+      url: "https://www.linkedin.com/in/karan-dave-984a883a8/"
 
 defaults:
   - scope:
