@@ -4,10 +4,20 @@ layout: home
 
 author\_profile: true
 
-title: "Karan Dave | Digital Strategist"
+title: "Karan Dave | Portfolio"
 
-excerpt: "BBA Student & Marketing Intern at Shaligram Infotech."
+header:
+
+overlay\_color: "#333"
+
+caption: "Digital Marketing & EV Research"
+
+excerpt: "BBA Student at Shaligram Infotech | Ahmedabad, India"
 
 \---
 
-Welcome to my professional site. Here, I bridge the gap between business strategy and 2026 digital trends.
+Welcome to my professional hub. I specialize in bridging the gap between business strategy and 2026 digital trends. My current focus is on \*_Hyper-Personalized Retail and Electric Vehicle consumer behavior_\*.
+
+### Featured Insights
+
+Explore my latest research and projects below.
