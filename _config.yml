@@ -1,21 +1,32 @@
 # Site Settings
 title: "Karan Dave"
-description: "BBA Student & Marketing Intern at Shaligram Infotech"
+description: "Digital Strategist & BBA Student"
 url: "https://karandave211.github.io"
 baseurl: ""
 
-# Theme Setup
+# Theme Settings
 remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "dark" # This is a clean, white/blue professional skin
+minimal_mistakes_skin: "air" # High-end white/blue professional look
 
-# SEO & Social
-locale: "en-IN"
-footer:
+# Site Author
+author:
+  name: "Karan Dave"
+  avatar: "/assets/images/profile.jpg" # You can add a photo later
+  bio: "Digital Strategist | BBA Student at Shaligram Infotech"
+  location: "Ahmedabad, India"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/karan-dave-984a883a8/"
 
+# Build Settings
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-feed
+
+# Defaults for Posts
 defaults:
   - scope:
       path: ""
@@ -27,9 +38,3 @@ defaults:
       comments: true
       share: true
       related: true
-      # Plugins
-plugins:
-  - jekyll-remote-theme
-  - jekyll-include-cache
-  - jekyll-seo-tag
-  - jekyll-feed
