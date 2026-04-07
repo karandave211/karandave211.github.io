@@ -1,4 +1,3 @@
-# Site Settings
 title: "Karan Dave"
 description: "Digital Strategist & BBA Student"
 url: "https://karandave211.github.io"
@@ -6,16 +5,16 @@ baseurl: ""
 
 # Theme Setup
 remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "air" # Clean white/blue professional skin
+minimal_mistakes_skin: "air"
 
-# Plugins - CRITICAL: No spaces before 'plugins:'
+# Plugins - No space before the colon!
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
   - jekyll-seo-tag
   - jekyll-feed
 
-# Sidebar & Author Info
+# Sidebar Info
 author:
   name: "Karan Dave"
   bio: "Digital Strategist | BBA Student at Shaligram Infotech"
