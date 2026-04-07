@@ -4,14 +4,20 @@ description: "Digital Strategist & BBA Student"
 url: "https://karandave211.github.io"
 baseurl: ""
 
-# Theme Settings
+# Theme Setup
 remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "air" # High-end white/blue professional look
+minimal_mistakes_skin: "air" # Clean white/blue professional skin
 
-# Site Author
+# Plugins - CRITICAL: No spaces before 'plugins:'
+plugins:
+  - jekyll-remote-theme
+  - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-feed
+
+# Sidebar & Author Info
 author:
   name: "Karan Dave"
-  avatar: "/assets/images/profile.jpg" # You can add a photo later
   bio: "Digital Strategist | BBA Student at Shaligram Infotech"
   location: "Ahmedabad, India"
   links:
@@ -19,14 +25,7 @@ author:
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/karan-dave-984a883a8/"
 
-# Build Settings
-plugins:
-  - jekyll-remote-theme
-  - jekyll-include-cache
-  - jekyll-seo-tag
-  - jekyll-feed
-
-# Defaults for Posts
+# Default Settings
 defaults:
   - scope:
       path: ""
@@ -34,7 +33,3 @@ defaults:
     values:
       layout: "single"
       author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
