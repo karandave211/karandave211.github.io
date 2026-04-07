@@ -3,18 +3,15 @@ description: "Digital Strategist & BBA Student"
 url: "https://karandave211.github.io"
 baseurl: ""
 
-# Theme Setup
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "air"
 
-# Plugins - No space before the colon!
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
   - jekyll-seo-tag
   - jekyll-feed
 
-# Sidebar Info
 author:
   name: "Karan Dave"
   bio: "Digital Strategist | BBA Student at Shaligram Infotech"
@@ -24,7 +21,6 @@ author:
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/karan-dave-984a883a8/"
 
-# Default Settings
 defaults:
   - scope:
       path: ""
