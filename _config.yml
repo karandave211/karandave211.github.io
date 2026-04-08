@@ -23,7 +23,6 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:davekaran955@gmail.com"
-defaults:
   - scope:
       path: ""
       type: "posts"
