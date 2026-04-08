@@ -30,3 +30,14 @@ author_profile: true
 
 ---
 [Download PDF Version](#) *(Link your PDF here later)*
+---
+
+### 📫 Let's Connect
+I'm always open to discussing digital strategy, market research, or potential collaborations.
+
+* **LinkedIn:** [linkedin.com/in/karan-dave-984a883a8](https://www.linkedin.com/in/karan-dave-984a883a8)
+* **Email:** [davekaran955@gmail.com](mailto:davekaran955@gmail.com)
+* **Location:** Ahmedabad, Gujarat
+
+---
+<a href="#" class="btn btn--primary">Resume PDF Coming Soon</a>
