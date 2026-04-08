@@ -17,10 +17,9 @@ author:
   bio: "Digital Strategist | BBA Student at Shaligram Infotech"
   location: "Ahmedabad, India"
   links:
-    - label: "LinkedIn"
+   - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/karan-dave-984a883a8/"
-
+      url: "https://www.linkedin.com/in/karan-dave-984a883a8"
 defaults:
   - scope:
       path: ""
