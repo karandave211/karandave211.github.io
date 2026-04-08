@@ -4,7 +4,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-seo-tag
   - jekyll-feed
-
+  - jekyll-sitemap
 # Site Settings
 title: "Karan Dave"
 description: "Digital Strategist | BBA Student | Ahmedabad"
