@@ -5,7 +5,7 @@ baseurl: ""
 
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "air"
-
+main_menu: true
 plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
