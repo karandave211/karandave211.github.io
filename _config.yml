@@ -1,15 +1,11 @@
 # Site Settings
-title: "Karan Dave"
-description: "Digital Strategist | BBA Student | Ahmedabad"
-url: "https://karandave211.github.io"
-baseurl: "" # leave empty
-
-# Theme Settings
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "air" # Clean white/blue skin
-
-# Localization
-locale: "en-US"
+title            : "Karan Dave"
+description      : "Digital Strategist | BBA Student | Ahmedabad"
+url              : "https://karandave211.github.io"
+baseurl          : ""
+repository       : "karandave211/karandave211.github.io"
+remote_theme     : "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "air"
 
 # Site Navigation
 navigation:
@@ -22,9 +18,9 @@ navigation:
 
 # Author Profile
 author:
-  name   : "Karan Dave"
-  bio    : "Digital Strategist | BBA Student"
-  location: "Ahmedabad, India"
+  name     : "Karan Dave"
+  bio      : "Digital Strategist | BBA Student"
+  location : "Ahmedabad, India"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
@@ -41,7 +37,3 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: false
-      share: true
-      related: true
