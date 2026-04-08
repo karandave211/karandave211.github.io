@@ -13,13 +13,16 @@ plugins:
   - jekyll-feed
 
 author:
-  name: "Karan Dave"
-  bio: "Digital Strategist | BBA Student at Shaligram Infotech"
+  name   : "Karan Dave"
+  bio    : "Digital Strategist | BBA Student"
   location: "Ahmedabad, India"
   links:
-   - label: "LinkedIn"
+    - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/karan-dave-984a883a8"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:davekaran955@gmail.com"
 defaults:
   - scope:
       path: ""
