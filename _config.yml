@@ -1,13 +1,9 @@
-
-# Site Settings
-title: "Karan Dave"
-description: "Digital Strategist | BBA Student | Ahmedabad"
-url: "https://karandave211.github.io"
-baseurl: ""
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin: "air"
+title: "Karan Dave"
+url: "https://karandave211.github.io"
+baseurl: ""
 
-# Site Navigation
 navigation:
   - title: "About"
     url: /about/
@@ -16,7 +12,6 @@ navigation:
   - title: "Resume"
     url: /resume/
 
-# Author Profile
 author:
   name: "Karan Dave"
   bio: "Digital Strategist | BBA Student"
@@ -27,12 +22,11 @@ author:
       url: "https://www.linkedin.com/in/karan-dave-984a883a8"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto: davekaran955@gmail.com"
+      url: "mailto:davekaran955@gmail.com"
 
-# Defaults
 defaults:
   - scope:
       path: ""
     values:
-      layout: "single"
-      author_profile: true 
+      layout: single
+      author_profile: true
