@@ -6,9 +6,7 @@ author_profile: true
 ---
 
 ### Hello, I'm Karan Dave.
-I am a BBA student based in Ahmedabad, currently interning as a Digital Strategist at **Shaligram Infotech**. 
-
-My work focuses on bridging the gap between traditional business strategy and modern digital trends. I have a deep interest in how AI is reshaping retail and consumer behavior, especially within the vibrant market of Gujarat.
+"I’m a BBA student in Ahmedabad who got tired of just reading about marketing in textbooks. I decided to build this site on GitHub to see if I could actually handle the technical side of the internet. When I’m not debugging CSS or GSC errors, you can find me [mention your interest in cricket or motorcycle maintenance]."
 
 #### Current Focus:
 * **Digital Marketing:** Leveraging AI tools to optimize retail reach.
