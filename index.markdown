@@ -40,3 +40,12 @@ When I'm not auditing sites or studying, you'll find me:
     img { max-width: 100% !important; height: auto !important; }
   }
 </style> 
+---
+
+## 🖋️ Latest Case Studies
+{% for post in site.posts limit:3 %}
+### [{{ post.title }}]({{ post.url | relative_url }})
+*{{ post.date | date: "%B %d, %Y" }}* — {{ post.excerpt | strip_html | truncate: 160 }}
+{% endfor %}
+
+[View All Posts]({{ '/year-archive/' | relative_url }})
