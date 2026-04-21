@@ -33,4 +33,4 @@ When I'm not auditing sites or studying, you'll find me:
     h1 { font-size: 1.8rem !important; }
     img { max-width: 100% !important; height: auto !important; }
   }
-</style>
+</style> 
