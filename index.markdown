@@ -25,24 +25,12 @@ When I'm not auditing sites or studying, you'll find me:
 * Riding my **Bike** through the streets of Ahmedabad.
 * Analyzing local businesses (ask me about my **Cafe SEO Audit**!).
 * Cheering for **RCB** and following the latest from **Virat Kohli**.
+
 <style>
-  /* Mobile Optimization Fix */
   @media screen and (max-width: 800px) {
-    body {
-      font-size: 19px !important;
-      line-height: 1.7 !important;
-      padding: 0 15px !important;
-    }
-    .wrapper {
-      max-width: 100% !important;
-      padding: 0 15px !important;
-    }
-    h1 {
-      font-size: 1.8rem !important;
-    }
-    img {
-      max-width: 100% !important;
-      height: auto !important;
-    }
+    body { font-size: 19px !important; line-height: 1.7 !important; padding: 0 15px !important; }
+    .wrapper, .page__content { max-width: 100% !important; padding: 0 15px !important; }
+    h1 { font-size: 1.8rem !important; }
+    img { max-width: 100% !important; height: auto !important; }
   }
 </style>
