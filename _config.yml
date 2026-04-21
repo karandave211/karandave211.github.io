@@ -42,3 +42,9 @@ defaults:
     values:
       layout: single
       author_profile: true
+      
+      analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-39Y9E5YXQ9"
+    anonymize_ip: true
