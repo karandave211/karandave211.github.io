@@ -1,3 +1,9 @@
+---
+layout: home
+author_profile: true
+entries_layout: list
+---
+
 # Karan Dave
 ### Digital Strategist & SEO Specialist
 
