@@ -1,24 +1,14 @@
-# Site Settings
-title: "Karan Dave | SEO & Market Research"
-locale: "en-US"
-url: "https://karandave211.github.io"
-baseurl: ""
-
-# Theme Settings
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "air"
-
 # Author Profile
 author:
   name: "Karan Dave"
-  bio: "SEO Intern at Shaligram Infotech | BBA Student"
+  bio: "SEO Intern | BBA Student"
   location: "Ahmedabad, India"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/karan-dave-984a883a8"
 
-# Analytics (This must be on its own lines)
+# Analytics
 analytics:
   provider: "google-gtag"
   google:
