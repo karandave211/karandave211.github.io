@@ -1,12 +1,27 @@
-# Author Profile
+# Site Settings
+title: "Karan Dave"
+description: "SEO Intern & BBA Student Portfolio"
+url: "https://karandave211.github.io"
+baseurl: ""
+
+# Theme Settings
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+minimal_mistakes_skin: "air" # This gives you the clean white/blue look
+search: true
+
+# Author Sidebar (This restores your photo and links)
 author:
   name: "Karan Dave"
-  bio: "SEO Intern | BBA Student"
+  avatar: "/assets/images/bio-photo.jpg" # Make sure your photo is in this folder!
+  bio: "Digital Strategist | BBA Student"
   location: "Ahmedabad, India"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/karan-dave-984a883a8"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:davekaran955@gmail.com"
 
 # Analytics
 analytics:
@@ -15,7 +30,7 @@ analytics:
     tracking_id: "G-39Y9E5YXQ9"
     anonymize_ip: true
 
-# Defaults
+# Defaults (This tells Jekyll to show the sidebar on every page)
 defaults:
   - scope:
       path: ""
@@ -23,6 +38,7 @@ defaults:
     values:
       layout: "single"
       author_profile: true
+      share: true
   - scope:
       path: ""
       type: "pages"
