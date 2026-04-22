@@ -1,7 +1,17 @@
 main:
   - title: "About"
-    url: /about/
+    url: "/about/"
   - title: "Projects"
-    url: /projects/
+    url: "/projects/"
   - title: "Resume"
-    url: /resume/
+    url: "/resume/"
+
+docs:
+  - title: "SEO Case Studies"
+    children:
+      - title: "Ahmedabad Cafe SEO Audit"
+        url: "/seo/ahmedabad-cafe-audit/"
+  - title: "Market Research"
+    children:
+      - title: "Industry Analysis"
+        url: "/research/industry-analysis/"
