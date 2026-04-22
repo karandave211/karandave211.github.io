@@ -1,49 +1,42 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog.
-
 # Site Settings
 title: "Karan Dave | SEO & Market Research Portfolio"
 locale: "en-US"
 description: "BBA Student and SEO Intern specializing in Local SEO and Market Research in Ahmedabad."
 url: "https://karandave211.github.io"
-baseurl: "" # leave empty for github pages
+baseurl: "" 
 
 # Author Settings
 author:
   name: "Karan Dave"
-  bio: "BBA Student & SEO Intern at Shaligram Infotech"
+  bio: "Digital Strategist | BBA Student"
   location: "Ahmedabad, India"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/karandave211"
+      url: "https://www.linkedin.com/in/karan-dave-984a883a8"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:davekaran955@gmail.com"
 
 # Theme Settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "aqua"
+minimal_mistakes_skin: "air"
 
-# Analytics (Fixed Spacing)
+# Analytics Settings
 analytics:
   provider: "google-gtag"
   google:
     tracking_id: "G-39Y9E5YXQ9"
     anonymize_ip: true
 
-# Defaults for Posts and Pages
+# Defaults
 defaults:
-  # _posts
   - scope:
       path: ""
       type: "posts"
     values:
       layout: "single"
       author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
   - scope:
       path: ""
       type: "pages"
@@ -55,17 +48,5 @@ defaults:
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
   - jemoji
-
-# Build Settings
-include: ["_pages"]
-exclude:
-  - Node_modules
-  - Gemfile
-  - Gemfile.lock
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
