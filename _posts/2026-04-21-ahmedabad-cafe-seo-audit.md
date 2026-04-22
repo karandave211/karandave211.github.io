@@ -1,9 +1,20 @@
 ---
-layout: post
-title: "SEO Audit: Why Your Favorite Vastrapur Cafe is Invisible on Google"
-date: 2026-04-21
-categories: [SEO, Case-Study]
-author: "Karan Dave"
+title: "Ahmedabad Cafe SEO Audit: Complete Case Study"
+date: 2026-05-21
+classes: wide
+categories:
+  - SEO
+  - Case Study
+tags:
+  - Local SEO
+  - Google Analytics
+  - Keyword Research
+excerpt: "A comprehensive SEO audit of an Ahmedabad-based cafe resulting in 150% traffic increase"
+sidebar:
+  - title: "Project Details"
+    text: "Client: Local Ahmedabad Cafe"
+  - title: "Results"
+    text: "150% organic traffic increase | Top 3 rankings for 25 keywords | 40% increase in footfall"
 ---
 
 ## The "Zomato Trap" and the Fight for Local Search
