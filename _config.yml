@@ -1,41 +1,60 @@
-# Site Settings
-title: "Karan Dave"
-locale: "en-US"
+title: "Karan Dave | SEO & Market Research Portfolio"
+name: "Karan Dave"
+description: "SEO Intern at Shaligram Infotech | BBA Student"
 url: "https://karandave211.github.io"
-baseurl: ""
+repository: "karandave211/karandave211.github.io"
+permalink: /:categories/:title/
 
-# Theme Settings
-remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "default"
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-39Y9E5YXQ9"
+    anonymize_ip: false
 
-# Author
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+      show_date: true
+      sidebar:
+        nav: "docs"
+
 author:
   name: "Karan Dave"
-  bio: "BBA Student & SEO Intern"
-  location: "Ahmedabad, India"
+  bio: "SEO Intern at Shaligram Infotech | BBA Student | Market Research Enthusiast"
+  location: "Ahmedabad"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/karan-dave-984a883a8"
 
-# Defaults
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "single"
-      author_profile: true
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "single"
-      author_profile: true
+main:
+  - title: "About"
+    url: "/about/"
+  - title: "Projects"
+    url: "/projects/"
+  - title: "Resume"
+    url: "/resume/"
 
-# Plugins
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-include-cache
+
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
