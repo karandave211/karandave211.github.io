@@ -1,6 +1,6 @@
 ---
 title: "Ahmedabad Cafe SEO Audit: From Page 5 to Page 1"
-date: 2024-01-15
+date: 2026-05-21
 classes: wide
 categories:
   - SEO
