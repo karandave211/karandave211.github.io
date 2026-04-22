@@ -1,10 +1,11 @@
 ---
-layout: single
-title: "Featured Projects"
+title: "Projects"
 permalink: /projects/
-author_profile: true
+layout: collection
+collection: posts
+entries_layout: grid
+classes: wide
 ---
-
 ### 🛵 Consumer Purchase Factors for EVs in Ahmedabad
 **Dissertation Project | BBA Final Year**
 
