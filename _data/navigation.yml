@@ -11,7 +11,3 @@ docs:
     children:
       - title: "Ahmedabad Cafe SEO Audit"
         url: "/seo/ahmedabad-cafe-audit/"
-  - title: "Market Research"
-    children:
-      - title: "Industry Analysis"
-        url: "/research/industry-analysis/"
