@@ -1,7 +1,12 @@
 ---
 layout: home
+title: ""
 author_profile: true
-entries_layout: list
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  caption: "SEO Intern at Shaligram Infotech"
+excerpt: "BBA Student | Market Research Enthusiast | Based in Ahmedabad"
 ---
 
 # Karan Dave
