@@ -11,8 +11,7 @@ author_profile: true
 ---
 
 #### 🎓 Education
-**Bachelor of Business Administration (BBA)** *Focus: Marketing & Digital Business*  
-Expected Completion: 2026
+**Bachelor of Business Administration (BBA)** *Focus: Marketing & Digital Business*: 2026
 
 #### 💼 Professional Experience
 **Digital Strategist (Intern)** *Shaligram Infotech | Ahmedabad*  
