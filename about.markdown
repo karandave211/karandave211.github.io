@@ -22,4 +22,4 @@ When I’m not debugging code or writing research reports, you’ll probably fin
 ### Let’s Connect
 I’m always open to talking about marketing, tech, or the best place to grab a coffee in Ahmedabad. 
 
-Check out my [LinkedIn](www.linkedin.com/in/karan-dave-984a883a8) or drop a message if you want to collaborate!
+Check out my [LinkedIn] www.linkedin.com/in/karan-dave-984a883a8 or drop a message if you want to collaborate!
