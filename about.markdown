@@ -1,13 +1,11 @@
 ---
-layout: page
-title: About Me
+title: "About Me"
 permalink: /about/
+layout: single
+author_profile: true
 ---
 
-## Hi, I'm Karan. 👋
-
-I’m a BBA student based in **Ahmedabad**, currently navigating the final stretch of my degree. While most of my days are spent analyzing market trends and consumer behavior for my dissertation on **Electric Vehicles**, I’ve developed a bit of an obsession with the "how" behind the digital world.
-
+I'm Karan Dave, a BBA student and SEO Intern at Shaligram Infotech in Ahmedabad. I specialize in SEO audits, keyword research, and market analysis.
 ### Why this site exists
 I didn't want to just be another marketing student who knows how to post on Instagram. I wanted to understand the technical side of the web. This site is built on **GitHub Pages**, and let’s just say the battle with Google Search Console sitemaps has taught me more about SEO than any textbook ever could!
 
