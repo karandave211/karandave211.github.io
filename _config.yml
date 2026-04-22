@@ -6,26 +6,19 @@ baseurl: ""
 
 # Theme Settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin: "air"
+minimal_mistakes_skin: "default"
 
-# Author Profile (The Sidebar)
+# Author
 author:
   name: "Karan Dave"
-  bio: "SEO Intern | BBA Student"
+  bio: "BBA Student & SEO Intern"
   location: "Ahmedabad, India"
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/karan-dave-984a883a8"
 
-# Analytics
-analytics:
-  provider: "google-gtag"
-  google:
-    tracking_id: "G-39Y9E5YXQ9"
-    anonymize_ip: true
-
-# Defaults (Forces Sidebar and Header to show)
+# Defaults
 defaults:
   - scope:
       path: ""
