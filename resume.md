@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 📧 **Email:** davekaran955@gmail.com  
-🔗 **LinkedIn:**[LinkedIn](https://www.linkedin.com/in/karan-dave-984a883a8)
+🔗 **LinkedIn:**[Connect](https://www.linkedin.com/in/karan-dave-984a883a8)
 
 ---
 
