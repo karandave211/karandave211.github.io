@@ -1,25 +1,33 @@
 ---
-title: "About Me"
+title: "About"
 permalink: /about/
 layout: single
 author_profile: true
 ---
 
-I'm Karan Dave, a BBA student and SEO Intern at Shaligram Infotech in Ahmedabad. I specialize in SEO audits, keyword research, and market analysis.
-### Why this site exists
-I didn't want to just be another marketing student who knows how to post on Instagram. I wanted to understand the technical side of the web. This site is built on **GitHub Pages**, and let’s just say the battle with Google Search Console sitemaps has taught me more about SEO than any textbook ever could!
+## My Journey
 
-### My Journey So Far
-* **SEO Intern at Shaligram Infotech:** Where I first got my hands dirty with search rankings and digital strategy.
-* **BBA Student & Researcher:** Currently studying the factors influencing EV adoption in the two-wheeler segment (specifically in the context of Ahmedabad's unique market).
-* **AI Enthusiast:** Exploring how AI like Gemini and specialized SEO tools are changing the way we market products in 2026.
+I'm currently a BBA student and SEO Intern at Shaligram Infotech in Ahmedabad. I discovered SEO during my second year of BBA when I realized that traditional business strategy needed a digital counterpart — that's when I started bridging the gap between business management and technical SEO.
 
-### Beyond the Screen
-When I’m not debugging code or writing research reports, you’ll probably find me:
-* **On two wheels:** I’m a big fan of my Bike. There’s something about a long ride that clears the head better than a screen ever will.
-* **Watching Cricket:** Rooting for the Indian national team and keeping a close eye on the T20 World Cup plans.
+## My Approach
 
-### Let’s Connect
-I’m always open to talking about marketing, tech, or the best place to grab a coffee in Ahmedabad. 
+I believe data-driven decisions beat guesswork. Every SEO audit I perform starts with research, not assumptions. I focus on:
+- **Local SEO** for small businesses in Ahmedabad
+- **Consumer behavior analysis** (BBA advantage)
+- **Technical audits** that actually get implemented
 
-[Connect with me on LinkedIn](https://www.linkedin.com/in/karan-dave-984a883a8)] or drop a message if you want to collaborate!
+## Certifications & Tools
+
+- Google Analytics Certified
+- Google Search Console
+- Google Tag Assistant
+- PageSpeed Insights
+- Jekyll & GitHub Pages
+
+## What I'm Looking For
+
+I'm actively seeking SEO and Market Research opportunities where I can apply my BBA knowledge and SEO skills to drive real business growth.
+
+---
+
+*Based in Ahmedabad. Available for internships and freelance projects.*
