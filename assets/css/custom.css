@@ -22,3 +22,10 @@ body {
     padding-top: 65px !important;
   }
 }
+/* Hide Twitter and Facebook share buttons */
+.share-page .twitter-share-button,
+.share-page .facebook-share-button,
+.btn--twitter,
+.btn--facebook {
+  display: none !important;
+}
