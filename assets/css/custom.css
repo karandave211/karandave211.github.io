@@ -1,0 +1,3 @@
+.archive__item .archive__item-excerpt + a {
+  display: none !important;
+}
