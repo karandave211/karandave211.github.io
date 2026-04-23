@@ -1,6 +1,7 @@
 title: "Karan Dave | SEO & Market Research Portfolio"
 name: "Karan Dave"
 description: "SEO Intern at Shaligram Infotech | BBA Student"
+read_more: false
 url: "https://karandave211.github.io"
 repository: "karandave211/karandave211.github.io"
 permalink: /:categories/:title/
