@@ -21,11 +21,13 @@ body {
   body {
     padding-top: 65px !important;
   }
-}
-/* Hide Twitter and Facebook share buttons */
+/* Hide Twitter and Facebook share buttons from posts */
 .share-page .twitter-share-button,
 .share-page .facebook-share-button,
 .btn--twitter,
-.btn--facebook {
+.btn--facebook,
+a[class*="twitter"],
+a[class*="facebook"],
+.social-share a:not(.btn--linkedin) {
   display: none !important;
 }
