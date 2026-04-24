@@ -84,92 +84,9 @@
     background-color: #2980b9;
     transform: translateY(-3px);
   }
-
-  /* Search icon in navigation */
-  .nav-search-icon {
-    cursor: pointer;
-    font-size: 1.2rem;
-    margin-left: 0.75rem;
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-    color: inherit;
-  }
-  .nav-search-icon:hover {
-    opacity: 0.7;
-  }
-
-  /* Search overlay */
-  .search-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.95);
-    z-index: 10000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.3s ease;
-  }
-  .search-overlay.active {
-    visibility: visible;
-    opacity: 1;
-  }
-  .search-overlay-close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 40px;
-    color: white;
-    cursor: pointer;
-  }
-  .search-overlay-input {
-    width: 80%;
-    max-width: 600px;
-    padding: 20px;
-    font-size: 1.5rem;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid white;
-    color: white;
-    text-align: center;
-    outline: none;
-  }
-  .search-results {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    max-width: 600px;
-    max-height: 40vh;
-    overflow-y: auto;
-    color: white;
-    background: rgba(0,0,0,0.7);
-    border-radius: 8px;
-    padding: 15px;
-    display: none;
-  }
-  .search-results.active {
-    display: block;
-  }
-  .search-results a {
-    color: white;
-    display: block;
-    padding: 8px;
-    border-bottom: 1px solid #444;
-    text-decoration: none;
-  }
-  .search-results a:hover {
-    color: #ddd;
-  }
 </style>
 
-<!-- Back to Top HTML -->
+<!-- Back to Top Button HTML -->
 <a href="#" class="back-to-top" title="Back to top">↑</a>
 
 <script>
@@ -193,112 +110,153 @@ window.addEventListener('scroll', function() {
   gtag('config', 'G-39Y9E5YXQ9');
 </script>
 
-<!-- Search Overlay Markup -->
-<div id="searchOverlay" class="search-overlay">
-  <div class="search-overlay-close" id="closeSearchOverlay">&times;</div>
-  <input type="text" id="searchInput" class="search-overlay-input" placeholder="Search projects...">
-  <div id="searchResults" class="search-results"></div>
+<!-- ========== SIMPLE SEARCH DROPDOWN ========== -->
+<style>
+  .search-container {
+    display: inline-block;
+    position: relative;
+  }
+  .search-icon {
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+    display: inline-block;
+  }
+  .search-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 280px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 0.75rem;
+    z-index: 10000;
+    display: none;
+  }
+  .search-dropdown.active {
+    display: block;
+  }
+  .search-dropdown input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    box-sizing: border-box;
+  }
+  .search-results-list {
+    margin-top: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  .search-result-item {
+    display: block;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    color: #333;
+    font-size: 0.85rem;
+  }
+  .search-result-item:hover {
+    background-color: #f5f5f5;
+  }
+  .no-results {
+    color: #777;
+    font-size: 0.85rem;
+    text-align: center;
+    padding: 10px 0;
+  }
+</style>
+
+<div class="search-container" id="searchContainer">
+  <span class="search-icon" id="searchIcon">🔍</span>
+  <div class="search-dropdown" id="searchDropdown">
+    <input type="text" id="searchInput" placeholder="Search projects...">
+    <div id="searchResults" class="search-results-list"></div>
+  </div>
 </div>
 
-<!-- Inject Search Icon and Logic -->
 <script>
 (function() {
-  // Wait for the navigation to be ready
-  function injectSearchIcon() {
-    var nav = document.querySelector('.greedy-nav');
-    if (!nav) {
-      // Fallback: try again after a short delay
-      setTimeout(injectSearchIcon, 500);
+  // Move the search container into the main navigation list
+  function moveSearchToNav() {
+    var navList = document.querySelector('.greedy-nav ul');
+    if (!navList) {
+      setTimeout(moveSearchToNav, 200);
       return;
     }
-    // Check if icon already added
-    if (document.querySelector('.nav-search-icon')) return;
-
-    // Find the <ul> inside .greedy-nav (the main navigation list)
-    var navList = nav.querySelector('ul');
-    if (!navList) return;
-
-    // Create list item with search icon
-    var li = document.createElement('li');
-    var iconLink = document.createElement('a');
-    iconLink.innerHTML = '🔍';
-    iconLink.href = '#';
-    iconLink.className = 'nav-search-icon';
-    iconLink.setAttribute('aria-label', 'Search');
-    iconLink.style.cursor = 'pointer';
-    li.appendChild(iconLink);
-    navList.appendChild(li);
-
-    // Attach click event to open overlay
-    iconLink.addEventListener('click', function(e) {
-      e.preventDefault();
-      var overlay = document.getElementById('searchOverlay');
-      if (overlay) {
-        overlay.classList.add('active');
-        setTimeout(function() {
-          document.getElementById('searchInput').focus();
-        }, 100);
-      }
-    });
+    var container = document.getElementById('searchContainer');
+    if (container && !container.closest('.greedy-nav')) {
+      var li = document.createElement('li');
+      li.appendChild(container);
+      navList.appendChild(li);
+    }
   }
 
-  // Try to inject after DOM ready
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', injectSearchIcon);
+    document.addEventListener('DOMContentLoaded', moveSearchToNav);
   } else {
-    injectSearchIcon();
+    moveSearchToNav();
   }
 
-  // Overlay close button
-  var closeBtn = document.getElementById('closeSearchOverlay');
-  if (closeBtn) {
-    closeBtn.addEventListener('click', function() {
-      var overlay = document.getElementById('searchOverlay');
-      if (overlay) overlay.classList.remove('active');
-      var resultsDiv = document.getElementById('searchResults');
-      if (resultsDiv) {
-        resultsDiv.innerHTML = '';
-        resultsDiv.classList.remove('active');
-      }
-    });
-  }
-
-  // Search functionality
+  // Toggle dropdown
+  var icon = document.getElementById('searchIcon');
+  var dropdown = document.getElementById('searchDropdown');
   var searchInput = document.getElementById('searchInput');
   var resultsDiv = document.getElementById('searchResults');
+
+  if (icon && dropdown) {
+    icon.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      dropdown.classList.toggle('active');
+      if (dropdown.classList.contains('active')) {
+        setTimeout(function() { searchInput.focus(); }, 50);
+      }
+    });
+
+    // Close if clicking outside
+    document.addEventListener('click', function(e) {
+      if (!icon.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.classList.remove('active');
+      }
+    });
+  }
+
+  // Load search index
   var searchData = [];
+  fetch('/search.json')
+    .then(function(res) { return res.json(); })
+    .then(function(data) {
+      searchData = data;
+    })
+    .catch(function() { console.warn('search.json not found. Did you enable search in _config.yml?'); });
 
+  // Perform search
   if (searchInput) {
-    // Load search index
-    fetch('/search.json')
-      .then(function(res) { return res.json(); })
-      .then(function(data) {
-        searchData = data;
-      })
-      .catch(function() { console.log('Search index not found'); });
-
     searchInput.addEventListener('keyup', function() {
       var query = this.value.trim().toLowerCase();
       if (query.length < 2) {
         resultsDiv.innerHTML = '';
-        resultsDiv.classList.remove('active');
         return;
       }
       var results = searchData.filter(function(item) {
         return (item.title && item.title.toLowerCase().includes(query)) ||
                (item.content && item.content.toLowerCase().includes(query)) ||
                (item.excerpt && item.excerpt.toLowerCase().includes(query));
-      }).slice(0, 10);
+      }).slice(0, 8);
+
       if (results.length) {
         resultsDiv.innerHTML = results.map(function(r) {
-          return '<a href="' + r.url + '"><strong>' + r.title + '</strong><br><small>' + (r.excerpt || '').substring(0, 100) + '</small></a>';
+          return '<a href="' + r.url + '" class="search-result-item">' + r.title + '</a>';
         }).join('');
-        resultsDiv.classList.add('active');
       } else {
-        resultsDiv.innerHTML = '<p style="color:white;text-align:center;">No results found</p>';
-        resultsDiv.classList.add('active');
+        resultsDiv.innerHTML = '<div class="no-results">No matches found</div>';
       }
     });
   }
 })();
 </script>
+<!-- ========== END SEARCH DROPDOWN ========== -->
