@@ -1,0 +1,6 @@
+<div class="social-share">
+  <!-- LinkedIn only -->
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url | url_encode }}&title={{ page.title | url_encode }}&summary={{ page.excerpt | strip_html | truncate: 200 | url_encode }}" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" rel="nofollow" target="_blank">
+    <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span>
+  </a>
+</div>
