@@ -42,4 +42,6 @@ When I'm not auditing sites or studying, you'll find me:
 
 ---
 
-*Want to see my work? Check out my [Projects](/projects/) page.*
+<div style="text-align: center; margin: 2rem 0;">
+  <a href="/projects/" style="display: inline-block; background-color: #3498db; color: white; padding: 12px 28px; border-radius: 30px; text-decoration: none; font-weight: bold; font-size: 1.1rem;">📂 View My Projects</a>
+</div>
