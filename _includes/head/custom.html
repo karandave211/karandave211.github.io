@@ -84,34 +84,22 @@
     background-color: #2980b9;
     transform: translateY(-3px);
   }
-</style>
 
-<!-- Back to Top Button HTML -->
-<a href="#" class="back-to-top" title="Back to top">↑</a>
-
-<script>
-// Back to Top Button Logic
-window.addEventListener('scroll', function() {
-  var backButton = document.querySelector('.back-to-top');
-  if (window.scrollY > 300) {
-    backButton.classList.add('show');
-  } else {
-    backButton.classList.remove('show');
+  /* Search icon in navigation */
+  .nav-search-icon {
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-left: 0.75rem;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
   }
-});
-</script>
+  .nav-search-icon:hover {
+    opacity: 0.7;
+  }
 
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-39Y9E5YXQ9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-39Y9E5YXQ9');
-</script>
-
-<!-- Search Overlay Component (requires #search-trigger in navigation) -->
-<style>
+  /* Search overlay */
   .search-overlay {
     position: fixed;
     top: 0;
@@ -119,7 +107,7 @@ window.addEventListener('scroll', function() {
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.95);
-    z-index: 9999;
+    z-index: 10000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -181,72 +169,136 @@ window.addEventListener('scroll', function() {
   }
 </style>
 
+<!-- Back to Top HTML -->
+<a href="#" class="back-to-top" title="Back to top">↑</a>
+
+<script>
+// Back to Top Button Logic
+window.addEventListener('scroll', function() {
+  var backButton = document.querySelector('.back-to-top');
+  if (backButton && window.scrollY > 300) {
+    backButton.classList.add('show');
+  } else if (backButton) {
+    backButton.classList.remove('show');
+  }
+});
+</script>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-39Y9E5YXQ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-39Y9E5YXQ9');
+</script>
+
+<!-- Search Overlay Markup -->
 <div id="searchOverlay" class="search-overlay">
   <div class="search-overlay-close" id="closeSearchOverlay">&times;</div>
   <input type="text" id="searchInput" class="search-overlay-input" placeholder="Search projects...">
   <div id="searchResults" class="search-results"></div>
 </div>
 
+<!-- Inject Search Icon and Logic -->
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  var searchTrigger = document.getElementById('search-trigger');
-  var overlay = document.getElementById('searchOverlay');
-  var closeBtn = document.getElementById('closeSearchOverlay');
-  var searchInput = document.getElementById('searchInput');
-  var resultsDiv = document.getElementById('searchResults');
-
-  if (!searchTrigger || !overlay) {
-    console.warn('Search trigger or overlay not found. Make sure _data/navigation.yml has id: "search-trigger" for the search menu item.');
-    return;
-  }
-
-  // Open overlay when clicking search icon in navigation
-  searchTrigger.addEventListener('click', function(e) {
-    e.preventDefault();
-    overlay.classList.add('active');
-    setTimeout(function() { searchInput.focus(); }, 100);
-  });
-
-  // Close overlay
-  closeBtn.addEventListener('click', function() {
-    overlay.classList.remove('active');
-    resultsDiv.innerHTML = '';
-    resultsDiv.classList.remove('active');
-  });
-
-  // Load search index (Jekyll generates /search.json)
-  var searchData = [];
-  fetch('/search.json')
-    .then(function(res) { return res.json(); })
-    .then(function(data) {
-      searchData = data;
-      console.log('Search index loaded:', searchData.length);
-    })
-    .catch(function(err) { console.log('No search.json found – may need to enable search in _config.yml'); });
-
-  // Perform search on keyup
-  searchInput.addEventListener('keyup', function() {
-    var query = this.value.trim().toLowerCase();
-    if (query.length < 2) {
-      resultsDiv.innerHTML = '';
-      resultsDiv.classList.remove('active');
+(function() {
+  // Wait for the navigation to be ready
+  function injectSearchIcon() {
+    var nav = document.querySelector('.greedy-nav');
+    if (!nav) {
+      // Fallback: try again after a short delay
+      setTimeout(injectSearchIcon, 500);
       return;
     }
-    var results = searchData.filter(function(item) {
-      return (item.title && item.title.toLowerCase().includes(query)) ||
-             (item.content && item.content.toLowerCase().includes(query)) ||
-             (item.excerpt && item.excerpt.toLowerCase().includes(query));
-    }).slice(0, 10);
+    // Check if icon already added
+    if (document.querySelector('.nav-search-icon')) return;
 
-    if (results.length) {
-      resultsDiv.innerHTML = results.map(function(r) {
-        return '<a href="' + r.url + '"><strong>' + r.title + '</strong><br><small>' + (r.excerpt || '').substring(0, 100) + '</small></a>';
-      }).join('');
-      resultsDiv.classList.add('active');
-    } else {
-      resultsDiv.innerHTML = '<p style="color:white;text-align:center;">No results found</p>';
-      resultsDiv.classList.add('active');
-    }
-  });
-});
+    // Find the <ul> inside .greedy-nav (the main navigation list)
+    var navList = nav.querySelector('ul');
+    if (!navList) return;
+
+    // Create list item with search icon
+    var li = document.createElement('li');
+    var iconLink = document.createElement('a');
+    iconLink.innerHTML = '🔍';
+    iconLink.href = '#';
+    iconLink.className = 'nav-search-icon';
+    iconLink.setAttribute('aria-label', 'Search');
+    iconLink.style.cursor = 'pointer';
+    li.appendChild(iconLink);
+    navList.appendChild(li);
+
+    // Attach click event to open overlay
+    iconLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      var overlay = document.getElementById('searchOverlay');
+      if (overlay) {
+        overlay.classList.add('active');
+        setTimeout(function() {
+          document.getElementById('searchInput').focus();
+        }, 100);
+      }
+    });
+  }
+
+  // Try to inject after DOM ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', injectSearchIcon);
+  } else {
+    injectSearchIcon();
+  }
+
+  // Overlay close button
+  var closeBtn = document.getElementById('closeSearchOverlay');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', function() {
+      var overlay = document.getElementById('searchOverlay');
+      if (overlay) overlay.classList.remove('active');
+      var resultsDiv = document.getElementById('searchResults');
+      if (resultsDiv) {
+        resultsDiv.innerHTML = '';
+        resultsDiv.classList.remove('active');
+      }
+    });
+  }
+
+  // Search functionality
+  var searchInput = document.getElementById('searchInput');
+  var resultsDiv = document.getElementById('searchResults');
+  var searchData = [];
+
+  if (searchInput) {
+    // Load search index
+    fetch('/search.json')
+      .then(function(res) { return res.json(); })
+      .then(function(data) {
+        searchData = data;
+      })
+      .catch(function() { console.log('Search index not found'); });
+
+    searchInput.addEventListener('keyup', function() {
+      var query = this.value.trim().toLowerCase();
+      if (query.length < 2) {
+        resultsDiv.innerHTML = '';
+        resultsDiv.classList.remove('active');
+        return;
+      }
+      var results = searchData.filter(function(item) {
+        return (item.title && item.title.toLowerCase().includes(query)) ||
+               (item.content && item.content.toLowerCase().includes(query)) ||
+               (item.excerpt && item.excerpt.toLowerCase().includes(query));
+      }).slice(0, 10);
+      if (results.length) {
+        resultsDiv.innerHTML = results.map(function(r) {
+          return '<a href="' + r.url + '"><strong>' + r.title + '</strong><br><small>' + (r.excerpt || '').substring(0, 100) + '</small></a>';
+        }).join('');
+        resultsDiv.classList.add('active');
+      } else {
+        resultsDiv.innerHTML = '<p style="color:white;text-align:center;">No results found</p>';
+        resultsDiv.classList.add('active');
+      }
+    });
+  }
+})();
 </script>
