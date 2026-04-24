@@ -86,18 +86,19 @@
   }
 </style>
 
-<!-- Back to Top HTML -->
+<!-- Back to Top Button HTML -->
 <a href="#" class="back-to-top" title="Back to top">↑</a>
 
 <script>
-  // Back to Top Logic
-  window.addEventListener('scroll', function() {
-    var btn = document.querySelector('.back-to-top');
-    if (btn) {
-      if (window.scrollY > 300) btn.classList.add('show');
-      else btn.classList.remove('show');
-    }
-  });
+// Back to Top Button Logic
+window.addEventListener('scroll', function() {
+  var backButton = document.querySelector('.back-to-top');
+  if (backButton && window.scrollY > 300) {
+    backButton.classList.add('show');
+  } else if (backButton) {
+    backButton.classList.remove('show');
+  }
+});
 </script>
 
 <!-- Google Analytics -->
@@ -108,163 +109,3 @@
   gtag('js', new Date());
   gtag('config', 'G-39Y9E5YXQ9');
 </script>
-
-<!-- ========== SEARCH DROPDOWN (floating, no full-screen) ========== -->
-<style>
-  .search-container {
-    display: inline-block;
-    position: relative;
-  }
-  .search-icon {
-    cursor: pointer;
-    font-size: 1.2rem;
-    padding: 0 0.5rem;
-    display: inline-block;
-  }
-  .search-dropdown {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 280px;
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-    padding: 0.75rem;
-    z-index: 10001;
-    display: none;
-  }
-  .search-dropdown.active {
-    display: block;
-  }
-  .search-dropdown input {
-    width: 100%;
-    padding: 8px 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    box-sizing: border-box;
-  }
-  .search-results-list {
-    margin-top: 10px;
-    max-height: 300px;
-    overflow-y: auto;
-  }
-  .search-result-item {
-    display: block;
-    padding: 8px 0;
-    border-bottom: 1px solid #eee;
-    text-decoration: none;
-    color: #333;
-    font-size: 0.85rem;
-  }
-  .search-result-item:hover {
-    background-color: #f5f5f5;
-  }
-  .no-results {
-    color: #777;
-    font-size: 0.85rem;
-    text-align: center;
-    padding: 10px 0;
-  }
-</style>
-
-<div class="search-container" id="searchContainer">
-  <span class="search-icon" id="searchIcon">🔍</span>
-  <div class="search-dropdown" id="searchDropdown">
-    <input type="text" id="searchInput" placeholder="Search projects...">
-    <div id="searchResults" class="search-results-list"></div>
-  </div>
-</div>
-
-<script>
-(function() {
-  // Insert search icon into the main navigation
-  function insertSearchIcon() {
-    var navList = document.querySelector('.greedy-nav ul');
-    if (!navList) {
-      setTimeout(insertSearchIcon, 200);
-      return;
-    }
-    var container = document.getElementById('searchContainer');
-    if (container && !container.closest('.greedy-nav')) {
-      var li = document.createElement('li');
-      li.appendChild(container);
-      navList.appendChild(li);
-    }
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', insertSearchIcon);
-  } else {
-    insertSearchIcon();
-  }
-
-  // Dropdown controls
-  var icon = document.getElementById('searchIcon');
-  var dropdown = document.getElementById('searchDropdown');
-  var input = document.getElementById('searchInput');
-  var resultsDiv = document.getElementById('searchResults');
-
-  if (icon && dropdown) {
-    icon.addEventListener('click', function(e) {
-      e.preventDefault();
-      e.stopPropagation();
-      dropdown.classList.toggle('active');
-      if (dropdown.classList.contains('active')) {
-        setTimeout(function() { input.focus(); }, 50);
-      }
-    });
-
-    document.addEventListener('click', function(e) {
-      if (!icon.contains(e.target) && !dropdown.contains(e.target)) {
-        dropdown.classList.remove('active');
-        if (resultsDiv) resultsDiv.innerHTML = '';
-      }
-    });
-  }
-
-  // Load search index (wait for it to exist)
-  var searchIndex = [];
-  function loadSearchIndex() {
-    fetch('/search.json')
-      .then(function(res) {
-        if (!res.ok) throw new Error('not ready');
-        return res.json();
-      })
-      .then(function(data) {
-        searchIndex = data;
-      })
-      .catch(function() {
-        // Retry every 2 seconds until it appears
-        setTimeout(loadSearchIndex, 2000);
-      });
-  }
-  loadSearchIndex();
-
-  // Perform search
-  if (input) {
-    input.addEventListener('keyup', function() {
-      var query = this.value.trim().toLowerCase();
-      if (query.length < 2) {
-        resultsDiv.innerHTML = '';
-        return;
-      }
-      var results = searchIndex.filter(function(item) {
-        return (item.title && item.title.toLowerCase().includes(query)) ||
-               (item.content && item.content.toLowerCase().includes(query)) ||
-               (item.excerpt && item.excerpt.toLowerCase().includes(query));
-      }).slice(0, 8);
-
-      if (results.length) {
-        resultsDiv.innerHTML = results.map(function(r) {
-          return '<a href="' + r.url + '" class="search-result-item">' + r.title + '</a>';
-        }).join('');
-      } else {
-        resultsDiv.innerHTML = '<div class="no-results">No matches found</div>';
-      }
-    });
-  }
-})();
-</script>
-<!-- ========== END SEARCH DROPDOWN ========== -->
