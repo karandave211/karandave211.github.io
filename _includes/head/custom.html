@@ -86,19 +86,18 @@
   }
 </style>
 
-<!-- Back to Top Button HTML -->
+<!-- Back to Top HTML -->
 <a href="#" class="back-to-top" title="Back to top">↑</a>
 
 <script>
-// Back to Top Button Logic
-window.addEventListener('scroll', function() {
-  var backButton = document.querySelector('.back-to-top');
-  if (backButton && window.scrollY > 300) {
-    backButton.classList.add('show');
-  } else if (backButton) {
-    backButton.classList.remove('show');
-  }
-});
+  // Back to Top Logic
+  window.addEventListener('scroll', function() {
+    var btn = document.querySelector('.back-to-top');
+    if (btn) {
+      if (window.scrollY > 300) btn.classList.add('show');
+      else btn.classList.remove('show');
+    }
+  });
 </script>
 
 <!-- Google Analytics -->
@@ -110,7 +109,7 @@ window.addEventListener('scroll', function() {
   gtag('config', 'G-39Y9E5YXQ9');
 </script>
 
-<!-- ========== FLOATING SEARCH DROPDOWN (overlays content) ========== -->
+<!-- ========== SEARCH DROPDOWN (floating, no full-screen) ========== -->
 <style>
   .search-container {
     display: inline-block;
@@ -132,7 +131,7 @@ window.addEventListener('scroll', function() {
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.15);
     padding: 0.75rem;
-    z-index: 10001;   /* above everything */
+    z-index: 10001;
     display: none;
   }
   .search-dropdown.active {
@@ -180,11 +179,11 @@ window.addEventListener('scroll', function() {
 
 <script>
 (function() {
-  // Move the search container into the main navigation bar
-  function moveSearchToNav() {
+  // Insert search icon into the main navigation
+  function insertSearchIcon() {
     var navList = document.querySelector('.greedy-nav ul');
     if (!navList) {
-      setTimeout(moveSearchToNav, 200);
+      setTimeout(insertSearchIcon, 200);
       return;
     }
     var container = document.getElementById('searchContainer');
@@ -196,15 +195,15 @@ window.addEventListener('scroll', function() {
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', moveSearchToNav);
+    document.addEventListener('DOMContentLoaded', insertSearchIcon);
   } else {
-    moveSearchToNav();
+    insertSearchIcon();
   }
 
-  // Dropdown toggle
+  // Dropdown controls
   var icon = document.getElementById('searchIcon');
   var dropdown = document.getElementById('searchDropdown');
-  var searchInput = document.getElementById('searchInput');
+  var input = document.getElementById('searchInput');
   var resultsDiv = document.getElementById('searchResults');
 
   if (icon && dropdown) {
@@ -213,37 +212,45 @@ window.addEventListener('scroll', function() {
       e.stopPropagation();
       dropdown.classList.toggle('active');
       if (dropdown.classList.contains('active')) {
-        setTimeout(function() { searchInput.focus(); }, 50);
+        setTimeout(function() { input.focus(); }, 50);
       }
     });
 
-    // Close when clicking outside
     document.addEventListener('click', function(e) {
       if (!icon.contains(e.target) && !dropdown.contains(e.target)) {
         dropdown.classList.remove('active');
-        resultsDiv.innerHTML = '';
+        if (resultsDiv) resultsDiv.innerHTML = '';
       }
     });
   }
 
-  // Load search index (requires search: true in _config.yml)
-  var searchData = [];
-  fetch('/search.json')
-    .then(function(res) { return res.json(); })
-    .then(function(data) {
-      searchData = data;
-    })
-    .catch(function() { console.warn('search.json not found. Did you enable search in _config.yml?'); });
+  // Load search index (wait for it to exist)
+  var searchIndex = [];
+  function loadSearchIndex() {
+    fetch('/search.json')
+      .then(function(res) {
+        if (!res.ok) throw new Error('not ready');
+        return res.json();
+      })
+      .then(function(data) {
+        searchIndex = data;
+      })
+      .catch(function() {
+        // Retry every 2 seconds until it appears
+        setTimeout(loadSearchIndex, 2000);
+      });
+  }
+  loadSearchIndex();
 
-  // Live search
-  if (searchInput) {
-    searchInput.addEventListener('keyup', function() {
+  // Perform search
+  if (input) {
+    input.addEventListener('keyup', function() {
       var query = this.value.trim().toLowerCase();
       if (query.length < 2) {
         resultsDiv.innerHTML = '';
         return;
       }
-      var results = searchData.filter(function(item) {
+      var results = searchIndex.filter(function(item) {
         return (item.title && item.title.toLowerCase().includes(query)) ||
                (item.content && item.content.toLowerCase().includes(query)) ||
                (item.excerpt && item.excerpt.toLowerCase().includes(query));
@@ -260,4 +267,4 @@ window.addEventListener('scroll', function() {
   }
 })();
 </script>
-<!-- ========== END FLOATING SEARCH DROPDOWN ========== -->
+<!-- ========== END SEARCH DROPDOWN ========== -->
