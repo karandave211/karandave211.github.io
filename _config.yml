@@ -63,4 +63,4 @@ exclude:
   - vendor
 
 breadcrumbs: true
-search: true
+search: false
