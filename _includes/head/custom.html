@@ -110,7 +110,7 @@ window.addEventListener('scroll', function() {
   gtag('config', 'G-39Y9E5YXQ9');
 </script>
 
-<!-- ========== SIMPLE SEARCH DROPDOWN ========== -->
+<!-- ========== FLOATING SEARCH DROPDOWN (overlays content) ========== -->
 <style>
   .search-container {
     display: inline-block;
@@ -130,9 +130,9 @@ window.addEventListener('scroll', function() {
     background: white;
     border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
     padding: 0.75rem;
-    z-index: 10000;
+    z-index: 10001;   /* above everything */
     display: none;
   }
   .search-dropdown.active {
@@ -180,7 +180,7 @@ window.addEventListener('scroll', function() {
 
 <script>
 (function() {
-  // Move the search container into the main navigation list
+  // Move the search container into the main navigation bar
   function moveSearchToNav() {
     var navList = document.querySelector('.greedy-nav ul');
     if (!navList) {
@@ -201,7 +201,7 @@ window.addEventListener('scroll', function() {
     moveSearchToNav();
   }
 
-  // Toggle dropdown
+  // Dropdown toggle
   var icon = document.getElementById('searchIcon');
   var dropdown = document.getElementById('searchDropdown');
   var searchInput = document.getElementById('searchInput');
@@ -217,15 +217,16 @@ window.addEventListener('scroll', function() {
       }
     });
 
-    // Close if clicking outside
+    // Close when clicking outside
     document.addEventListener('click', function(e) {
       if (!icon.contains(e.target) && !dropdown.contains(e.target)) {
         dropdown.classList.remove('active');
+        resultsDiv.innerHTML = '';
       }
     });
   }
 
-  // Load search index
+  // Load search index (requires search: true in _config.yml)
   var searchData = [];
   fetch('/search.json')
     .then(function(res) { return res.json(); })
@@ -234,7 +235,7 @@ window.addEventListener('scroll', function() {
     })
     .catch(function() { console.warn('search.json not found. Did you enable search in _config.yml?'); });
 
-  // Perform search
+  // Live search
   if (searchInput) {
     searchInput.addEventListener('keyup', function() {
       var query = this.value.trim().toLowerCase();
@@ -259,4 +260,4 @@ window.addEventListener('scroll', function() {
   }
 })();
 </script>
-<!-- ========== END SEARCH DROPDOWN ========== -->
+<!-- ========== END FLOATING SEARCH DROPDOWN ========== -->
