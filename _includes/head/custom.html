@@ -53,38 +53,41 @@
       padding-top: 150px !important;
     }
   }
-  <!-- Back to Top Button -->
-<style>
-.back-to-top {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background-color: #3498db;
-  color: white;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 50px;
-  font-size: 24px;
-  text-decoration: none;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease;
-  z-index: 999;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-}
 
-.back-to-top.show {
-  opacity: 1;
-  visibility: visible;
-}
+  /* Back to Top Button */
+  .back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #3498db;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    text-decoration: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 999;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  }
 
-.back-to-top:hover {
-  background-color: #2980b9;
-  transform: translateY(-3px);
-}
+  .back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .back-to-top:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+  }
 </style>
+
+<!-- Back to Top Button HTML -->
+<a href="#" class="back-to-top" title="Back to top">↑</a>
 
 <script>
 // Back to Top Button Logic
@@ -98,9 +101,6 @@ window.addEventListener('scroll', function() {
 });
 </script>
 
-<a href="#" class="back-to-top" title="Back to top">↑</a>
-</style>
-
 <!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-39Y9E5YXQ9"></script>
 <script>
@@ -109,36 +109,16 @@ window.addEventListener('scroll', function() {
   gtag('js', new Date());
   gtag('config', 'G-39Y9E5YXQ9');
 </script>
-<!-- ============================================
-SEARCH OVERLAY COMPONENT
-Replaces the default search button with a sleek icon & full-screen overlay
-=============================================== -->
+
+<!-- Search Overlay Component (requires #search-trigger in navigation) -->
 <style>
-  /* Style for the search icon in the navigation */
-  .search-overlay-icon {
-    cursor: pointer;
-    font-size: 1.25em;
-    transition: opacity 0.2s ease;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 0.5rem; /* Add some spacing */
-  }
-
-  .search-overlay-icon:hover {
-    opacity: 0.7;
-    text-decoration: none;
-  }
-
-  /* Style for the full-screen overlay */
   .search-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.95);
+    background: rgba(0,0,0,0.95);
     z-index: 9999;
     display: flex;
     align-items: center;
@@ -147,13 +127,10 @@ Replaces the default search button with a sleek icon & full-screen overlay
     opacity: 0;
     transition: visibility 0s, opacity 0.3s ease;
   }
-
   .search-overlay.active {
     visibility: visible;
     opacity: 1;
   }
-
-  /* Style for the overlay close button */
   .search-overlay-close {
     position: absolute;
     top: 20px;
@@ -161,182 +138,115 @@ Replaces the default search button with a sleek icon & full-screen overlay
     font-size: 40px;
     color: white;
     cursor: pointer;
-    transition: transform 0.2s;
-    z-index: 10001;
   }
-
-  .search-overlay-close:hover {
-    transform: scale(1.1);
-  }
-
-  /* Style for the search input box */
   .search-overlay-input {
     width: 80%;
-    max-width: 800px;
+    max-width: 600px;
     padding: 20px;
     font-size: 1.5rem;
     background: transparent;
     border: none;
     border-bottom: 2px solid white;
     color: white;
-    outline: none;
     text-align: center;
-    font-family: inherit;
+    outline: none;
   }
-
-  .search-overlay-input::placeholder {
-    color: #ccc;
-    font-size: 1.2rem;
-  }
-
-  /* Style for the results container */
-  .search-results-container {
+  .search-results {
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
-    max-width: 800px;
+    max-width: 600px;
     max-height: 40vh;
     overflow-y: auto;
     color: white;
-    text-align: left;
     background: rgba(0,0,0,0.7);
     border-radius: 8px;
     padding: 15px;
-  }
-
-  .search-results-container a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    padding: 8px 0;
-    border-bottom: 1px solid #444;
-  }
-  .search-results-container a:hover {
-    color: #ccc;
-  }
-  /* Hide results container initially */
-  .search-results-container {
     display: none;
   }
-  .search-results-container.active {
+  .search-results.active {
     display: block;
+  }
+  .search-results a {
+    color: white;
+    display: block;
+    padding: 8px;
+    border-bottom: 1px solid #444;
+    text-decoration: none;
+  }
+  .search-results a:hover {
+    color: #ddd;
   }
 </style>
 
 <div id="searchOverlay" class="search-overlay">
   <div class="search-overlay-close" id="closeSearchOverlay">&times;</div>
-  <input type="text" id="searchInput" class="search-overlay-input" placeholder="Search projects, posts..." autocomplete="off">
-  <div id="searchResults" class="search-results-container"></div>
+  <input type="text" id="searchInput" class="search-overlay-input" placeholder="Search projects...">
+  <div id="searchResults" class="search-results"></div>
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    // Check if we're on a site with Lunr search already configured
-    const overlay = document.getElementById('searchOverlay');
-    const openBtn = document.getElementById('openSearchOverlay');
-    const closeBtn = document.getElementById('closeSearchOverlay');
-    const searchInput = document.getElementById('searchInput');
-    const resultsContainer = document.getElementById('searchResults');
+document.addEventListener('DOMContentLoaded', function() {
+  var searchTrigger = document.getElementById('search-trigger');
+  var overlay = document.getElementById('searchOverlay');
+  var closeBtn = document.getElementById('closeSearchOverlay');
+  var searchInput = document.getElementById('searchInput');
+  var resultsDiv = document.getElementById('searchResults');
 
-    // Create search index
-    let searchIndex = null;
-    let searchStore = [];
+  if (!searchTrigger || !overlay) {
+    console.warn('Search trigger or overlay not found. Make sure _data/navigation.yml has id: "search-trigger" for the search menu item.');
+    return;
+  }
 
-    // Fetch the search data (if it exists) - Adjust path if needed
-    async function loadSearchIndex() {
-      try {
-        const response = await fetch('/search.json');
-        if (!response.ok) {
-          console.warn('Search index not found at /search.json');
-          return;
-        }
-        const data = await response.json();
-        searchStore = data;
-        console.log('Search index loaded, entries:', searchStore.length);
-      } catch (error) {
-        console.error('Error loading search index:', error);
-      }
+  // Open overlay when clicking search icon in navigation
+  searchTrigger.addEventListener('click', function(e) {
+    e.preventDefault();
+    overlay.classList.add('active');
+    setTimeout(function() { searchInput.focus(); }, 100);
+  });
+
+  // Close overlay
+  closeBtn.addEventListener('click', function() {
+    overlay.classList.remove('active');
+    resultsDiv.innerHTML = '';
+    resultsDiv.classList.remove('active');
+  });
+
+  // Load search index (Jekyll generates /search.json)
+  var searchData = [];
+  fetch('/search.json')
+    .then(function(res) { return res.json(); })
+    .then(function(data) {
+      searchData = data;
+      console.log('Search index loaded:', searchData.length);
+    })
+    .catch(function(err) { console.log('No search.json found – may need to enable search in _config.yml'); });
+
+  // Perform search on keyup
+  searchInput.addEventListener('keyup', function() {
+    var query = this.value.trim().toLowerCase();
+    if (query.length < 2) {
+      resultsDiv.innerHTML = '';
+      resultsDiv.classList.remove('active');
+      return;
     }
+    var results = searchData.filter(function(item) {
+      return (item.title && item.title.toLowerCase().includes(query)) ||
+             (item.content && item.content.toLowerCase().includes(query)) ||
+             (item.excerpt && item.excerpt.toLowerCase().includes(query));
+    }).slice(0, 10);
 
-    // Function to perform search
-    function performSearch(query) {
-      if (!query || query.length < 2) {
-        resultsContainer.innerHTML = '';
-        resultsContainer.classList.remove('active');
-        return;
-      }
-
-      const lowerQuery = query.toLowerCase();
-      const results = searchStore.filter(item => {
-        return (item.title && item.title.toLowerCase().includes(lowerQuery)) ||
-               (item.content && item.content.toLowerCase().includes(lowerQuery)) ||
-               (item.excerpt && item.excerpt.toLowerCase().includes(lowerQuery));
-      }).slice(0, 10); // Limit to 10 results
-
-      if (results.length > 0) {
-        resultsContainer.innerHTML = results.map(result => `
-          <a href="${result.url}">
-            <strong>${result.title}</strong><br>
-            <small>${result.excerpt ? result.excerpt.substring(0, 100) + '...' : ''}</small>
-          </a>
-        `).join('');
-        resultsContainer.classList.add('active');
-      } else {
-        resultsContainer.innerHTML = '<p style="color: white; text-align: center;">No results found.</p>';
-        resultsContainer.classList.add('active');
-      }
-    }
-
-    // Wait for search index to load
-    loadSearchIndex();
-
-    // Create the search icon in the navigation
-    const navMenu = document.querySelector('.greedy-nav');
-    if (navMenu) {
-      const searchIcon = document.createElement('a');
-      searchIcon.innerHTML = '🔍';
-      searchIcon.id = 'openSearchOverlay';
-      searchIcon.className = 'search-overlay-icon';
-      searchIcon.style.cursor = 'pointer';
-      navMenu.appendChild(searchIcon);
+    if (results.length) {
+      resultsDiv.innerHTML = results.map(function(r) {
+        return '<a href="' + r.url + '"><strong>' + r.title + '</strong><br><small>' + (r.excerpt || '').substring(0, 100) + '</small></a>';
+      }).join('');
+      resultsDiv.classList.add('active');
     } else {
-      // Fallback if greedy-nav not found
-      const masthead = document.querySelector('.masthead');
-      if (masthead) {
-        const searchIcon = document.createElement('a');
-        searchIcon.innerHTML = '🔍';
-        searchIcon.id = 'openSearchOverlay';
-        searchIcon.className = 'search-overlay-icon';
-        masthead.appendChild(searchIcon);
-      }
-    }
-
-    // Event listeners for the overlay
-    if (openBtn) {
-      openBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        if (overlay) {
-          overlay.classList.add('active');
-          if (searchInput) {
-            setTimeout(() => { searchInput.focus(); }, 100);
-          }
-        }
-      });
-    }
-
-    if (closeBtn) {
-      closeBtn.addEventListener('click', function() {
-        if (overlay) overlay.classList.remove('active');
-      });
-    }
-
-    if (searchInput) {
-      searchInput.addEventListener('keyup', function(e) {
-        performSearch(this.value);
-      });
+      resultsDiv.innerHTML = '<p style="color:white;text-align:center;">No results found</p>';
+      resultsDiv.classList.add('active');
     }
   });
+});
 </script>
-<!-- END SEARCH OVERLAY COMPONENT -->
