@@ -1,6 +1,3 @@
-.archive__item .archive__item-excerpt + a {
-  display: none !important;
-}
 /* Make the header sticky/fixed */
 .masthead {
   position: fixed !important;
@@ -21,11 +18,9 @@ body {
   body {
     padding-top: 65px !important;
   }
+}
 
-/* Hide Twitter and Facebook share buttons */
-.btn--twitter,
-.btn--facebook,
-.share-page .btn--twitter,
-.share-page .btn--facebook {
+/* (Optional) Remove the extra rule that hid "View all posts" – no longer needed */
+.archive__item .archive__item-excerpt + a {
   display: none !important;
 }
