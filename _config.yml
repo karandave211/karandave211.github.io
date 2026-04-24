@@ -43,6 +43,8 @@ main:
     url: "/projects/"
   - title: "Resume"
     url: "/resume/"
+  - title: "Contact"
+    url: "/contact/"
 
 plugins:
   - jekyll-paginate
@@ -59,7 +61,6 @@ exclude:
   - Gemfile.lock
   - node_modules
   - vendor
-  
-# Breadcrumb Navigation (Beta)
-breadcrumbs: true  # Set to false to disable. Default is false.
+
+breadcrumbs: true
 search: true
