@@ -7,6 +7,3 @@ main:
     url: "/resume/"
   - title: "Contact"
     url: "/contact/"
-  - title: "🔍"
-    url: "#"
-    id: "search-trigger"
