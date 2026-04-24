@@ -62,3 +62,4 @@ exclude:
   
 # Breadcrumb Navigation (Beta)
 breadcrumbs: true  # Set to false to disable. Default is false.
+search_provider: lunr
