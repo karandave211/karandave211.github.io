@@ -22,6 +22,23 @@ I am a BBA student and SEO Intern at Shaligram Infotech with a passion for data-
 
 ---
 
+<div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 1rem; margin: 2rem 0; padding: 1rem; background: #f8f9fa; border-radius: 8px; text-align: center;">
+  <div style="flex: 1; min-width: 120px;">
+    <div style="font-size: 2rem; font-weight: bold; color: #3498db;">2+</div>
+    <div style="font-size: 0.85rem; color: #555;">Case Studies</div>
+  </div>
+  <div style="flex: 1; min-width: 120px;">
+    <div style="font-size: 2rem; font-weight: bold; color: #3498db;">150%</div>
+    <div style="font-size: 0.85rem; color: #555;">Avg. Traffic Lift</div>
+  </div>
+  <div style="flex: 1; min-width: 120px;">
+    <div style="font-size: 2rem; font-weight: bold; color: #3498db;">25+</div>
+    <div style="font-size: 0.85rem; color: #555;">Keywords on Page 1</div>
+  </div>
+</div>
+
+---
+
 ## 📈 Featured Project: The Ahmedabad EV Study
 
 I recently conducted a comprehensive research project titled:
