@@ -10,8 +10,8 @@ tags:
   - Google Analytics
   - Keyword Research
   - Ahmedabad
-excerpt: "How I increased organic traffic from 50 to 125 monthly visits for a local Ahmedabad cafe. Read the full audit and results →"  
-  teaser: "/assets/images/cafe-teaser.jpg"
+excerpt: "How I increased organic traffic from 50 to 125 monthly visits for a local Ahmedabad cafe. Read the full audit and results →"
+teaser: "/assets/images/cafe-teaser.jpg"
 sidebar:
   - title: "Client"
     text: "Local Cafe, Ahmedabad"
