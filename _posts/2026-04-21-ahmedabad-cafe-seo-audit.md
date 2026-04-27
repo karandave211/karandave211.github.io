@@ -1,5 +1,5 @@
 ---
-title: title: "+150% Traffic: Ahmedabad Cafe SEO Audit Case Study"
+title: "+150% Traffic: Ahmedabad Cafe SEO Audit Case Study"
 date: 2026-04-21
 classes: wide
 categories:
