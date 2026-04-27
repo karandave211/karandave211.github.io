@@ -1,16 +1,15 @@
 ---
-title: "Keyword Research for a Local Gym in Ahmedabad: A Practical Walkthrough"
+title: "Step‑by‑Step Keyword Research for a Local Gym (+5 Target Keywords)"
 date: 2026-04-27
+schema: Article
 categories:
   - SEO
   - Keyword Research
 tags:
   - Keyword Research
   - Local SEO
-  - Ahmedabad
-excerpt: "A step‑by‑step guide to finding high‑intent, low‑competition keywords for a fitness business in Ahmedabad using free tools."
+excerpt: "Step‑by‑step keyword research for a local gym using free tools. Includes 5 target keywords and search volume data."
 ---
-
 ## The Challenge
 
 A local gym in Ahmedabad wanted to attract more members through organic search but had no idea which keywords to target. Their current website ranked only for the brand name. I conducted a keyword research exercise to identify opportunities that could bring in ready‑to‑join traffic.
