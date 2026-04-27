@@ -10,8 +10,7 @@ tags:
   - Google Analytics
   - Keyword Research
   - Ahmedabad
-excerpt: "A complete SEO audit for a local Ahmedabad cafe. Results: 150% traffic increase, 25+ keywords on page 1, and 40% boost in footfall."
-header:
+excerpt: "How I increased organic traffic from 50 to 125 monthly visits for a local Ahmedabad cafe. Read the full audit and results →"  
   teaser: "/assets/images/cafe-teaser.jpg"
 sidebar:
   - title: "Client"
