@@ -1,6 +1,7 @@
 ---
 title: "Why WhatsApp is the Real 'Social' Network for Ahmedabad’s Businesses"
 date: 2026-04-08
+schema: Article
 layout: single
 excerpt: "Moving past the 'Good Morning' messages to see how local businesses are winning with conversational commerce."
 categories:
