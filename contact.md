@@ -1,10 +1,10 @@
 ---
-title: "Contact Me"
+title: "Contact"
 permalink: /contact/
 layout: single
 author_profile: true
+html: true
 ---
-
 ## Get in Touch
 
 I'm currently looking for SEO and Market Research opportunities. Feel free to reach out!
