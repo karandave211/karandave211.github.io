@@ -1,6 +1,7 @@
 ---
 title: "The Rise of AI in Modern Marketing: A Digital Strategist's Perspective"
 date: 2026-04-08
+schema: Article
 layout: single
 excerpt: "Exploring how Artificial Intelligence is transforming consumer behavior and digital strategy for modern businesses."
 categories:
