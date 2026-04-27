@@ -101,31 +101,46 @@ layout: single
     grid-template-columns: 1fr;
   }
 }
+  console.log("Filter script loaded");
 </style>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const buttons = document.querySelectorAll('.filter-btn');
-  const cards = document.querySelectorAll('.project-card');
+(function() {
+  var buttons = document.querySelectorAll('.filter-btn');
+  var cards = document.querySelectorAll('.project-card');
 
-  buttons.forEach(button => {
-    button.addEventListener('click', () => {
-      const filter = button.getAttribute('data-filter').toLowerCase();
+  if (!buttons.length || !cards.length) {
+    console.log("Filter elements not found");
+    return;
+  }
 
-      // Update active button style
-      buttons.forEach(btn => btn.classList.remove('active'));
-      button.classList.add('active');
+  function filterCards(category) {
+    category = category.toLowerCase();
+    cards.forEach(function(card) {
+      var cardCategories = card.getAttribute('data-categories') || '';
+      if (category === 'all' || cardCategories.indexOf(category) !== -1) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
 
-      // Filter cards
-      cards.forEach(card => {
-        const categories = card.getAttribute('data-categories') || '';
-        if (filter === 'all' || categories.includes(filter)) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
-      });
+  buttons.forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      var filterValue = this.getAttribute('data-filter');
+      buttons.forEach(function(b) { b.classList.remove('active'); });
+      this.classList.add('active');
+      filterCards(filterValue);
     });
   });
-});
+
+  // Ensure "All" is active and showing everything on page load
+  var activeBtn = document.querySelector('.filter-btn.active');
+  if (!activeBtn) {
+    var allBtn = document.querySelector('.filter-btn[data-filter="all"]');
+    if (allBtn) allBtn.classList.add('active');
+  }
+  filterCards('all');
+})();
 </script>
