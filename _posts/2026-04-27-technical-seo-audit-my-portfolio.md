@@ -1,16 +1,15 @@
 ---
-title: "Technical SEO Audit: How I Optimised My Own Portfolio Site"
+title: "Technical SEO Audit: How I Fixed My Portfolio's 6s Load Time"
 date: 2026-04-27
+schema: Article
 categories:
   - SEO
   - Technical SEO
 tags:
   - Core Web Vitals
   - PageSpeed
-  - SEO Audit
-excerpt: "A behind‑the‑scenes look at the technical issues I found on my own Jekyll site – and how I fixed them using free Google tools."
+excerpt: "How I used Google PageSpeed Insights and Search Console to fix my portfolio's 6s load time and Core Web Vitals."
 ---
-
 When I built my portfolio on GitHub Pages using the Minimal Mistakes theme, I wanted it to be fast, crawlable, and user‑friendly. Before sharing it publicly, I ran a technical audit on myself using only free tools. Here’s what I found and how I fixed it.
 
 ---
