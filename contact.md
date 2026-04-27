@@ -16,7 +16,7 @@ html: true
 
 ## Send a direct message
 
-<form action="https://formspree.io/f/mwvajzka" method="POST" style="margin-top: 1rem;">
+<form action="https://formspree.io/f/mwvajzka?next=/thank-you/" method="POST" style="margin-top: 1rem;">
   <div style="margin-bottom: 1rem;">
     <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Name</label>
     <input type="text" id="name" name="name" required style="width: 100%; padding: 0.5rem; font-size: 1rem; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box;">
