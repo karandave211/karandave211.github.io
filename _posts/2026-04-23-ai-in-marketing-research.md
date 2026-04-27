@@ -1,6 +1,7 @@
 ---
-title: "Research: Artificial Intelligence (AI) in Marketing"
+title: "AI in Marketing: Key Takeaways from My BBA Dissertation"
 date: 2026-04-23
+schema: Article
 categories:
   - Market Research
   - Dissertation
@@ -8,9 +9,8 @@ tags:
   - AI
   - Marketing
   - Research
-excerpt: "A university dissertation analyzing how Meta, Amazon, Spotify, and Netflix use AI strategically in their marketing."
+excerpt: "A BBA dissertation analysis of how Meta, Amazon, Spotify, and Netflix use AI differently. Key takeaways for marketers →"
 ---
-
 ## Research Overview
 
 This dissertation investigates the strategic implementation and impact of Artificial Intelligence (AI) in modern marketing through an analysis of four industry-defining companies: **Meta Platforms, Amazon, Spotify, and Netflix**.
