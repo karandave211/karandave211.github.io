@@ -1,5 +1,5 @@
 ---
-title: "Why Local Businesses Fail at SEO – And a 4‑Step Fix"
+title: "Why Local Businesses in Ahmedabad Still Ignore SEO (And a 4‑Step Fix)"
 date: 2026-04-24
 schema: Article
 categories:
@@ -8,7 +8,7 @@ categories:
 tags:
   - Local SEO
   - Ahmedabad
-excerpt: "Why Ahmedabad businesses skip SEO (and how to persuade them). Practical tips from my internship experience →"
+excerpt: "Insights from my internship: common objections to SEO and how to persuade business owners with small wins."
 ---
 
 During my SEO internship at Shaligram Infotech, I have spoken with dozens of local business owners in Ahmedabad – cafes, retailers, service providers, and small manufacturers. A recurring theme emerges: **many still do not invest in search engine optimisation.**
