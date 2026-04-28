@@ -1,5 +1,5 @@
 ---
-title: "AI in Marketing: Key Takeaways from My BBA Dissertation"
+title: "AI in Marketing: How 4 Giants (Meta, Amazon, Spotify, Netflix) Use AI Differently"
 date: 2026-04-23
 schema: Article
 categories:
@@ -9,7 +9,7 @@ tags:
   - AI
   - Marketing
   - Research
-excerpt: "A BBA dissertation analysis of how Meta, Amazon, Spotify, and Netflix use AI differently. Key takeaways for marketers →"
+excerpt: "How do ad‑based, e‑commerce, and subscription models change AI strategy? Key takeaways from my BBA dissertation."
 ---
 ## Research Overview
 
