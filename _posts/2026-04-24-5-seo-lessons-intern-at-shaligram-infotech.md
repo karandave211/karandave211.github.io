@@ -1,5 +1,5 @@
 ---
-title: "5 Actionable SEO Lessons I Learned as an Intern (with Real Data)"
+title: "5 SEO Lessons from a Real Internship (With Client Results & Data)"
 date: 2026-04-24
 schema: Article
 categories:
@@ -8,7 +8,7 @@ categories:
 tags:
   - SEO Strategy
   - Professional Development
-excerpt: "Real‑world SEO lessons from my internship – from technical audits to local SEO wins. Click to see the data and results."
+excerpt: "From technical audits to local SEO wins – what I learned working on live client campaigns. Practical and honest."
 ---
 During my internship at Shaligram Infotech in Ahmedabad, I moved beyond theoretical SEO concepts and into practical execution. Working on client accounts, conducting technical audits, and measuring tangible results taught me lessons that no classroom could fully convey. Below are the five most impactful takeaways from my experience.
 
