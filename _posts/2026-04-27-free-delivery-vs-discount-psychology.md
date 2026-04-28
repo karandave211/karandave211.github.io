@@ -1,5 +1,5 @@
 ---
-title: "The Psychology of 'Free Delivery' vs 'Discount': A Small Experiment"
+title: "Free Delivery vs Discount: A Small Experiment in Consumer Psychology (Ahmedabad Data)"
 date: 2026-04-27
 schema: Article
 categories:
@@ -9,7 +9,7 @@ tags:
   - Consumer Psychology
   - Pricing Strategy
   - BBA Research
-excerpt: "A simple experiment comparing how Ahmedabad consumers react to 'free delivery' versus a monetary discount – and what it means for local businesses."
+excerpt: "Which offer wins? 77% preferred free delivery over an equal discount. What this means for local businesses."
 ---
 
 As part of my BBA coursework and personal interest in consumer behaviour, I ran a small experiment to test a classic marketing question: **Which is more appealing – “free delivery” or an equivalent monetary discount?**
