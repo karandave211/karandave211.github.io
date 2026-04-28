@@ -1,6 +1,6 @@
 ---
 title: "A BBA Student's Guide to Digital Marketing Internships (What Worked for Me)"
-date: 2026-04-27                                                                                          
+date: 2026-04-27
 schema: Article
 categories:
   - Career
@@ -13,115 +13,108 @@ tags:
 excerpt: "How I landed my SEO internship at Shaligram Infotech – practical steps for BBA students on building a portfolio, finding opportunities, and acing interviews."
 ---
 
-When I started my BBA, I knew I wanted a career in marketing – but I had no idea how competitive digital marketing internships had become. After months of applying, tweaking my approach, and finally landing an SEO internship at Shaligram Infotech, I learned what actually works.
+<p>When I started my BBA, I knew I wanted a career in marketing – but I had no idea how competitive digital marketing internships had become. After months of applying, tweaking my approach, and finally landing an SEO internship at Shaligram Infotech, I learned what actually works.</p>
 
-This guide is for BBA students who feel stuck. No fluff – just actionable steps based on my real experience.
+<p>This guide is for BBA students who feel stuck. No fluff – just actionable steps based on my real experience.</p>
 
----
+<h2>1. Build a Simple Portfolio (Even If You Have No Clients)</h2>
 
-## 1. Build a Simple Portfolio (Even If You Have No Clients)
+<p>Most BBA students rely only on their CV. That’s not enough anymore. Recruiters want to <em>see</em> your work.</p>
 
-Most BBA students rely only on their CV. That’s not enough anymore. Recruiters want to *see* your work.
+<p><strong>What I did:</strong></p>
+<ul>
+<li>Built this portfolio site using GitHub Pages and Minimal Mistakes (free).</li>
+<li>Wrote 2–3 fake case studies based on real local businesses (e.g., an Ahmedabad cafe audit).</li>
+<li>Included a blog where I analysed SEO tools or marketing news.</li>
+</ul>
 
-**What I did:**
-- Built this portfolio site using GitHub Pages and Minimal Mistakes (free).
-- Wrote 2–3 fake case studies based on real local businesses (e.g., an Ahmedabad cafe audit).
-- Included a blog where I analysed SEO tools or marketing news.
+<p><strong>You don’t need:</strong> Expensive hosting, a custom domain, or design skills. A clean, functional site with genuine effort stands out.</p>
 
-**You don’t need:** Expensive hosting, a custom domain, or design skills. A clean, functional site with genuine effort stands out.
+<h2>2. Find Internships That Actually Hire Students</h2>
 
----
+<p>Big job portals (LinkedIn, Indeed, Internshala) are crowded. I got my internship through a different path:</p>
+<ul>
+<li><strong>Local agencies:</strong> I searched Google Maps for “SEO agency Ahmedabad” and visited their websites. Many have a “Careers” or “Interns” page.</li>
+<li><strong>Cold emailing:</strong> I sent a brief, personalised email to 15 agencies with a link to my portfolio. One replied – Shaligram Infotech.</li>
+<li><strong>College alumni:</strong> A senior introduced me to someone at a digital agency. That connection didn’t lead directly to a job, but it gave me interview practice.</li>
+</ul>
+<p><strong>Pro tip:</strong> Don’t wait for posted openings. Email agencies even if they aren’t advertising.</p>
 
-## 2. Find Internships That Actually Hire Students
+<h2>3. Tailor Your CV (Kill the Generic Template)</h2>
 
-Big job portals (LinkedIn, Indeed, Internshala) are crowded. I got my internship through a different path:
+<p>My first CV was a generic “team player, hardworking, passionate” disaster. I changed three things:</p>
 
-- **Local agencies:** I searched Google Maps for “SEO agency Ahmedabad” and visited their websites. Many have a “Careers” or “Interns” page.
-- **Cold emailing:** I sent a brief, personalised email to 15 agencies with a link to my portfolio. One replied – Shaligram Infotech.
-- **College alumni:** A senior introduced me to someone at a digital agency. That connection didn’t lead directly to a job, but it gave me interview practice.
+<table>
+<tr><th>Weak</th><th>Strong</th></tr>
+<tr><td>“Learned SEO during college”</td><td>“Conducted technical audit for a local cafe → fixed 8 meta descriptions, improved load time by 50%”</td></tr>
+<tr><td>“Good communication skills”</td><td>“Wrote 5 blog posts on consumer psychology; one read by marketing manager at [agency name]”</td></tr>
+<tr><td>“Interested in social media”</td><td>“Managed Instagram page for college fest – grew followers by 30% in 2 weeks”</td></tr>
+</table>
 
-**Pro tip:** Don’t wait for posted openings. Email agencies even if they aren’t advertising.
+<p><strong>Rule:</strong> Every bullet point should mention a <em>specific task</em> and a <em>measurable outcome</em>.</p>
 
----
+<h2>4. Prepare for Interviews Like a Marketer</h2>
 
-## 3. Tailor Your CV (Kill the Generic Template)
+<p>I was nervous before my first interview. Then I realised that marketing interviews test your thinking, not your memory.</p>
 
-My first CV was a generic “team player, hardworking, passionate” disaster. I changed three things:
+<p><strong>Questions I was asked:</strong></p>
+<ul>
+<li>“How would you improve the SEO of a local restaurant?”</li>
+<li>“What’s a Google algorithm update you know?”</li>
+<li>“Explain keyword research in simple words.”</li>
+</ul>
 
-| Weak | Strong |
-|------|--------|
-| “Learned SEO during college” | “Conducted technical audit for a local cafe → fixed 8 meta descriptions, improved load time by 50%” |
-| “Good communication skills” | “Wrote 5 blog posts on consumer psychology; one read by marketing manager at [agency name]” |
-| “Interested in social media” | “Managed Instagram page for college fest – grew followers by 30% in 2 weeks” |
+<p><strong>How I prepared:</strong></p>
+<ul>
+<li>Practised speaking out loud – recorded myself answering common questions.</li>
+<li>Built a small knowledge base: 5 SEO tools, 3 algorithm updates, 2 local case studies.</li>
+<li>Went through my portfolio and rehearsed explaining each project in 60 seconds.</li>
+</ul>
+<p><strong>Result:</strong> I didn’t know everything, but I showed enthusiasm and a process for finding answers.</p>
 
-**Rule:** Every bullet point should mention a *specific task* and a *measurable outcome*.
+<h2>5. Manage Expectations During the Internship</h2>
 
----
+<p>Once you land the internship, don’t expect to change the world in week one. Here’s what I learned:</p>
+<ul>
+<li><strong>Ask for small tasks first</strong> – complete them perfectly before asking for bigger work.</li>
+<li><strong>Document everything</strong> – keep a log of what you did daily. It becomes material for your next portfolio update.</li>
+<li><strong>Don’t pretend to know</strong> – when I didn’t understand a technical SEO term, I said “I don’t know, but I’ll learn it today.” That honesty was appreciated.</li>
+</ul>
+<p><strong>The biggest lesson:</strong> Internships are for learning, not just impressing. The real value is the network and experience you take to your next role.</p>
 
-## 4. Prepare for Interviews Like a Marketer
+<h2>6. Use Your Internship to Build Your Brand</h2>
 
-I was nervous before my first interview. Then I realised that marketing interviews test your thinking, not your memory.
+<p>While interning, I did three things that later helped me:</p>
+<ol>
+<li><strong>Asked for permission</strong> to write blog posts about what I was learning (with client approval, anonymised).</li>
+<li><strong>Connected with colleagues</strong> on LinkedIn – they later endorsed my skills.</li>
+<li><strong>Saved data</strong> – anonymised traffic charts, keyword rankings, before‑after screenshots (without confidential info). Those became my case studies.</li>
+</ol>
+<p>Recruiters love seeing that you turned an internship into tangible portfolio assets.</p>
 
-**Questions I was asked:**
-- “How would you improve the SEO of a local restaurant?”
-- “What’s a Google algorithm update you know?”
-- “Explain keyword research in simple words.”
+<h2>Why This Approach Works for BBA Students</h2>
 
-**How I prepared:**
-- Practised speaking out loud – recorded myself answering common questions.
-- Built a small knowledge base: 5 SEO tools, 3 algorithm updates, 2 local case studies.
-- Went through my portfolio and rehearsed explaining each project in 60 seconds.
+<p>BBA programmes teach theory. The market rewards execution. The gap between the two is where most students struggle.</p>
 
-**Result:** I didn’t know everything, but I showed enthusiasm and a process for finding answers.
+<p>Closing that gap doesn’t require years of experience. It requires:</p>
+<ul>
+<li>A simple portfolio (start today).</li>
+<li>Reaching out to local agencies (send 10 emails this week).</li>
+<li>Tailoring your CV to results, not responsibilities.</li>
+<li>Practising interview answers out loud.</li>
+<li>Turning your internship tasks into public work.</li>
+</ul>
 
----
+<h2>Final Advice</h2>
 
-## 5. Manage Expectations During the Internship
+<p>You don’t need a perfect GPA or a famous college. I’m a BBA student at a regular university, and I landed an SEO internship at a respected agency. The differentiator was a portfolio that showed real work – even if that work was self‑initiated.</p>
 
-Once you land the internship, don’t expect to change the world in week one. Here’s what I learned:
+<p>Start small. Fix one meta description. Analyse one competitor. Write one blog post. Do it today.</p>
 
-- **Ask for small tasks first** – complete them perfectly before asking for bigger work.
-- **Document everything** – keep a log of what you did daily. It becomes material for your next portfolio update.
-- **Don’t pretend to know** – when I didn’t understand a technical SEO term, I said “I don’t know, but I’ll learn it today.” That honesty was appreciated.
+<p><em>Have questions about your internship search? Connect with me on <a href="https://www.linkedin.com/in/karan-dave-984a883a8">LinkedIn</a>.</em></p>
 
-**The biggest lesson:** Internships are for learning, not just impressing. The real value is the network and experience you take to your next role.
+<hr>
 
----
-
-## 6. Use Your Internship to Build Your Brand
-
-While interning, I did three things that later helped me:
-
-1. **Asked for permission** to write blog posts about what I was learning (with client approval, anonymised).
-2. **Connected with colleagues** on LinkedIn – they later endorsed my skills.
-3. **Saved data** – anonymised traffic charts, keyword rankings, before‑after screenshots (without confidential info). Those became my case studies.
-
-Recruiters love seeing that you turned an internship into tangible portfolio assets.
-
----
-
-## Why This Approach Works for BBA Students
-
-BBA programmes teach theory. The market rewards execution. The gap between the two is where most students struggle.
-
-Closing that gap doesn’t require years of experience. It requires:
-
-- A simple portfolio (start today).
-- Reaching out to local agencies (send 10 emails this week).
-- Tailoring your CV to results, not responsibilities.
-- Practising interview answers out loud.
-- Turning your internship tasks into public work.
-
----
-
-## Final Advice
-
-You don’t need a perfect GPA or a famous college. I’m a BBA student at a regular university, and I landed an SEO internship at a respected agency. The differentiator was a portfolio that showed real work – even if that work was self‑initiated.
-
-Start small. Fix one meta description. Analyse one competitor. Write one blog post. Do it today.
-
-*Have questions about your internship search? Connect with me on [LinkedIn](https://www.linkedin.com/in/karan-dave-984a883a8).*
-
----
+<p><em>This guide is based on my personal experience at Shaligram Infotech, Ahmedabad. Your journey may differ – but the principles are universal.</em></p>
 
 *This guide is based on my personal experience at Shaligram Infotech, Ahmedabad. Your journey may differ – but the principles are universal.*
