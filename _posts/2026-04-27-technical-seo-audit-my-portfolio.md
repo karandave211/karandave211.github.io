@@ -1,5 +1,5 @@
 ---
-title: "Technical SEO Audit: How I Fixed My Portfolio's 6s Load Time"
+title: "Technical SEO Audit: How I Fixed My Portfolio's 6‑Second Load Time (Real Data)"
 date: 2026-04-27
 schema: Article
 categories:
@@ -8,7 +8,7 @@ categories:
 tags:
   - Core Web Vitals
   - PageSpeed
-excerpt: "How I used Google PageSpeed Insights and Search Console to fix my portfolio's 6s load time and Core Web Vitals."
+excerpt: "PageSpeed Insights, Search Console, and manual fixes – what I found and how I improved Core Web Vitals"
 ---
 When I built my portfolio on GitHub Pages using the Minimal Mistakes theme, I wanted it to be fast, crawlable, and user‑friendly. Before sharing it publicly, I ran a technical audit on myself using only free tools. Here’s what I found and how I fixed it.
 
