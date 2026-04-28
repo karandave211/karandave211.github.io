@@ -1,5 +1,5 @@
 ---
-title: "Chatbots for Small Business: A Practical Guide for Ahmedabad Entrepreneurs"
+title: "Chatbots for Small Business: A Practical Guide (No Coding, ₹1000–3000/Month)"
 date: 2026-04-28
 schema: Article
 categories:
@@ -10,7 +10,7 @@ tags:
   - Small Business
   - Ahmedabad
   - Customer Service
-excerpt: "How Ahmedabad's small businesses can use affordable, no‑code chatbots to automate customer service, generate leads, and save time – without a tech team."
+excerpt: "Platform comparison, step‑by‑step roadmap, and real ROI calculations for Ahmedabad entrepreneurs."
 ---
 
 A common myth is that chatbots are only for large e‑commerce brands with deep pockets. The reality is that small businesses in Ahmedabad – cafes, retail shops, clinics, and service providers – can benefit even more. Why? Because they have limited staff and high customer enquiry volume.
