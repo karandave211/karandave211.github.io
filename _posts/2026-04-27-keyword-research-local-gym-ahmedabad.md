@@ -1,5 +1,5 @@
 ---
-title: "Step‑by‑Step Keyword Research for a Local Gym (+5 Target Keywords)"
+title: "Keyword Research for a Local Gym: A Step‑by‑Step Walkthrough (+5 Target Keywords)"
 date: 2026-04-27
 schema: Article
 categories:
@@ -8,7 +8,7 @@ categories:
 tags:
   - Keyword Research
   - Local SEO
-excerpt: "Step‑by‑step keyword research for a local gym using free tools. Includes 5 target keywords and search volume data."
+excerpt: "How I found 45 keyword ideas, filtered to 5 high‑intent terms, and recommended a page structure. Free tools only."
 ---
 ## The Challenge
 
