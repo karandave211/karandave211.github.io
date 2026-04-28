@@ -109,6 +109,7 @@ window.addEventListener('scroll', function() {
   gtag('js', new Date());
   gtag('config', 'G-39Y9E5YXQ9');
 </script>
+
 {% if page.schema == "Article" %}
 <script type="application/ld+json">
 {
@@ -130,3 +131,22 @@ window.addEventListener('scroll', function() {
 }
 </script>
 {% endif %}
+
+<!-- Person Schema for Homepage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Karan Dave",
+  "url": "https://karandave211.github.io/",
+  "sameAs": [
+    "https://www.linkedin.com/in/karan-dave-984a883a8",
+    "https://github.com/karandave211"
+  ],
+  "jobTitle": "SEO Intern & Digital Strategist",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Shaligram Infotech"
+  }
+}
+</script>
