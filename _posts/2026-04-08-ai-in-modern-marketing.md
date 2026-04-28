@@ -1,9 +1,9 @@
 ---
-title: "The Rise of AI in Modern Marketing: A Digital Strategist's Perspective"
+title: "AI in Marketing: How It’s Changing Consumer Behavior (+3 Examples)"
 date: 2026-04-08
 schema: Article
 layout: single
-excerpt: "Exploring how Artificial Intelligence is transforming consumer behavior and digital strategy for modern businesses."
+excerpt: "How is AI reshaping digital marketing? See three real applications – hyper‑personalization, predictive analytics, and customer experience. Read the perspective of a digital strategist."
 categories:
   - Marketing
 tags:
