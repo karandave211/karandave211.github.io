@@ -1,5 +1,5 @@
 ---
-title: "What Drives EV Adoption in Ahmedabad? Key Factors Behind the Shift from Petrol"
+title: "EV Adoption in Ahmedabad: 5 Key Factors Driving the Shift from Petrol"
 date: 2026-04-27
 schema: Article
 categories:
@@ -9,7 +9,7 @@ tags:
   - Electric Vehicles
   - Ahmedabad
   - BBA Research
-excerpt: "A research-based look at why Ahmedabad buyers choose electric two-wheelers – and what still holds them back."
+excerpt: "Primary research on what matters most to buyers – cost savings, range anxiety, gender differences, and battery swapping."
 ---
 
 Electric two‑wheelers (scooters and motorcycles) are emerging as a practical solution to India’s urban traffic and pollution challenges. While the EV segment is still young, its growth trajectory is steep. In India, two‑wheelers account for over 70% of all registered vehicles, so electrifying this category offers substantial fuel savings and environmental benefits.
