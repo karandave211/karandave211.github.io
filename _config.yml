@@ -22,7 +22,8 @@ defaults:
       read_time: true
       comments: false
       share: true
-      related: true
+      related: true          # Enable related posts section
+      related_max: 3         # Show up to 3 related posts (optional)
       show_date: true
       sidebar:
         nav: "docs"
