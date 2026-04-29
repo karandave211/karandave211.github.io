@@ -89,3 +89,4 @@ For professional inquiries or to discuss SEO strategies, please connect via [Lin
 ---
 
 *Based on my experience at Shaligram Infotech, Ahmedabad. The views expressed are my own and do not necessarily reflect those of the company.*
+📘 *See my [SEO On‑Page Playbook](/seo-playbook/) for a detailed checklist.*
