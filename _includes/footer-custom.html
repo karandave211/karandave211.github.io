@@ -62,11 +62,19 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 })();
+
+// Move footer to the end of the body
+document.addEventListener('DOMContentLoaded', function() {
+  var footerElements = document.querySelectorAll('#custom-footer-hr, #custom-footer-content');
+  footerElements.forEach(function(el) {
+    document.body.appendChild(el);
+  });
+});
 </script>
 
-<!-- Footer -->
-<hr style="margin: 1rem 0; border: none; border-top: 1px solid #e8e8e8;">
-<footer style="text-align: center; font-size: 0.85rem; color: #777; padding-bottom: 1rem;">
+<!-- Footer content (wrapped with IDs for relocation) -->
+<hr id="custom-footer-hr" style="margin: 1rem 0; border: none; border-top: 1px solid #e8e8e8;">
+<footer id="custom-footer-content" style="text-align: center; font-size: 0.85rem; color: #777; padding-bottom: 1rem;">
   <p>
     <a href="https://www.linkedin.com/in/karan-dave-984a883a8" target="_blank" rel="noopener noreferrer" style="color: #777; margin: 0 10px; text-decoration: none;">LinkedIn</a>
     <a href="https://github.com/karandave211" target="_blank" rel="noopener noreferrer" style="color: #777; margin: 0 10px; text-decoration: none;">GitHub</a>
