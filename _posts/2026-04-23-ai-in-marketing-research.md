@@ -84,3 +84,4 @@ The research established theoretical and technological foundations covering:
 ---
 
 **Connect with me on [LinkedIn](https://www.linkedin.com/in/karan-dave-984a883a8) to discuss AI in marketing.**
+*Part of my [Market Research Hub](/market-research-hub/).*
