@@ -135,3 +135,4 @@ This article is based on real research and platforms available today in Ahmedaba
 ---
 
 *This guide is part of my portfolio as an SEO and digital marketing strategist based in Ahmedabad.*
+*Part of my [Market Research Hub](/market-research-hub/).*
