@@ -207,3 +207,4 @@ Listed the cafe on **15 local directories**:
 *This case study is part of my portfolio as an SEO Intern at **Shaligram Infotech, Ahmedabad**.*
 
 *For more case studies or to discuss your project, connect with me on [LinkedIn](https://www.linkedin.com/in/karan-dave-984a883a8).*
+📘 *See my [SEO On‑Page Playbook](/seo-playbook/) for a detailed checklist.*
