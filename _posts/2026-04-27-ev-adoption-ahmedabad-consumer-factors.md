@@ -127,3 +127,4 @@ Beyond individual buyers, the pre‑owned EV market is poised to emerge. As earl
 Ahmedabad is a perfect testbed for electric two‑wheeler adoption: a compact, commuting‑intensive city with rising fuel costs and government support. Cost savings and social influence are the primary drivers; range anxiety and the “silent engine” feeling are the main barriers. Battery swapping and targeted infrastructure can solve the apartment‑dweller problem. Compared to Bengaluru and Delhi, Ahmedabad’s cost‑driven adoption logic is more sustainable. With the right policy and private sector moves, electric two‑wheelers can become the dominant mode of personal transport in the city within five years.
 
 *This research was conducted as part of my BBA programme and independent market analysis. For a deeper discussion or collaboration opportunities, connect with me on [LinkedIn](https://www.linkedin.com/in/karan-dave-984a883a8).*
+*Part of my [Market Research Hub](/market-research-hub/).*
