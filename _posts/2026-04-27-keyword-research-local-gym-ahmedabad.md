@@ -111,3 +111,4 @@ Full impact will be measured at 90 days.
 You don't need expensive tools to find valuable keywords. Start with seed terms, listen to Google's suggestions, and filter by commercial intent. Even implementing 2–3 targeted keywords can bring observable traffic and calls.
 
 *This research was conducted as part of my SEO internship at Shaligram Infotech, Ahmedabad.*
+📘 *See my [SEO On‑Page Playbook](/seo-playbook/) for a detailed checklist.*
