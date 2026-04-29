@@ -37,6 +37,10 @@ I am a BBA student and SEO Intern at Shaligram Infotech with a passion for data-
   </div>
 </div>
 
+<p style="text-align: center; margin: -1rem 0 1rem 0;">
+  📘 <a href="/seo-playbook/" style="color: #3498db; font-weight: bold;">View my SEO On‑Page Checklist (Playbook)</a>
+</p>
+
 ---
 
 ## 📈 Featured Project: The Ahmedabad EV Study
