@@ -138,3 +138,4 @@ Follow the plan day by day. Do not skip the citation and review steps – they a
 **Use this guide for your own client projects or portfolio. Document your progress and you’ll have a new case study.**
 
 *Have questions about a specific business vertical? Connect with me on [LinkedIn](https://www.linkedin.com/in/karan-dave-984a883a8).*
+📘 *See my [SEO On‑Page Playbook](/seo-playbook/) for a detailed checklist.*
