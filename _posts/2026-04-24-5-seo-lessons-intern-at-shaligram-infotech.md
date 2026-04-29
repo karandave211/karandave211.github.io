@@ -1,5 +1,5 @@
 ---
-title: "5 SEO Lessons from a Real Internship (With Client Results & Data)"
+title: "5 Actionable SEO Lessons I Learned as an Intern (with Real Data)"
 date: 2026-04-24
 schema: Article
 categories:
@@ -8,15 +8,16 @@ categories:
 tags:
   - SEO Strategy
   - Professional Development
-excerpt: "From technical audits to local SEO wins – what I learned working on live client campaigns. Practical and honest."
+excerpt: "Real‑world SEO lessons from my internship – from technical audits to local SEO wins. Click to see the data and results."
 ---
+
 During my internship at Shaligram Infotech in Ahmedabad, I moved beyond theoretical SEO concepts and into practical execution. Working on client accounts, conducting technical audits, and measuring tangible results taught me lessons that no classroom could fully convey. Below are the five most impactful takeaways from my experience.
 
 ---
 
 ## 1. Technical SEO Provides the Foundation for All Other Efforts
 
-Early in the internship, I assumed keyword research and backlink acquisition would drive most of the value. However, my first client audit quickly corrected that assumption.
+Early in the internship, I assumed keyword research and backlink acquisition would drive most of the value. However, my first client audit quickly changed that assumption.
 
 For a local Ahmedabad cafe client, the initial technical assessment revealed:
 - Missing meta descriptions across all pages
@@ -63,7 +64,9 @@ Initially, I approached SEO as a solitary technical exercise. The most successfu
 - **With developers** – to implement schema markup and resolve Core Web Vitals issues
 - **With clients** – to align SEO tactics with genuine business objectives, not arbitrary keyword lists
 
-**Professional practice:** Instead of delivering raw audit reports, I now present prioritized action plans with clear effort estimates (High / Medium / Low) and expected impact. Clients and stakeholders respond far more positively to structured, actionable guidance.
+**Professional practice:** Instead of delivering raw audit reports, I now present prioritized action plans with clear effort estimates (High / Medium / Low) and expected impact.
+
+Dealing with client objections is a recurring theme – read my take on [why local businesses ignore SEO](/seo/why-local-businesses-ignore-seo-ahmedabad/) and how to persuade them.
 
 ---
 
@@ -89,4 +92,5 @@ For professional inquiries or to discuss SEO strategies, please connect via [Lin
 ---
 
 *Based on my experience at Shaligram Infotech, Ahmedabad. The views expressed are my own and do not necessarily reflect those of the company.*
+
 📘 *See my [SEO On‑Page Playbook](/seo-playbook/) for a detailed checklist.*
