@@ -90,15 +90,17 @@
 <a href="#" class="back-to-top" title="Back to top">↑</a>
 
 <script>
-// Back to Top Button Logic
-window.addEventListener('scroll', function() {
-  var backButton = document.querySelector('.back-to-top');
-  if (backButton && window.scrollY > 300) {
-    backButton.classList.add('show');
-  } else if (backButton) {
-    backButton.classList.remove('show');
-  }
-});
+// Back to Top Button Logic – deferred to avoid blocking Lighthouse
+setTimeout(function() {
+  window.addEventListener('scroll', function() {
+    var backButton = document.querySelector('.back-to-top');
+    if (backButton && window.scrollY > 300) {
+      backButton.classList.add('show');
+    } else if (backButton) {
+      backButton.classList.remove('show');
+    }
+  });
+}, 0);
 </script>
 
 <!-- Google Tag Manager -->
