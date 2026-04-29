@@ -123,3 +123,4 @@ The site now passes Core Web Vitals for both mobile and desktop, as reported by 
 Technical SEO doesn't require expensive tools. Google PageSpeed Insights and Search Console give you 90% of what you need. Auditing your own portfolio is a great way to learn – because you control every fix.
 
 *This audit was performed as part of my ongoing work at Shaligram Infotech and for my personal portfolio.*
+📘 *See my [SEO On‑Page Playbook](/seo-playbook/) for a detailed checklist.*
