@@ -72,6 +72,8 @@ I identified **35 local keywords** with high intent and low to medium competitio
 
 **Why:** High relevance to the cafe's location, decent search volume, and low competition.
 
+For a detailed walkthrough of keyword research (including how to filter and prioritise), see my [step‑by‑step gym case study](/seo/keyword-research-local-gym-ahmedabad/).
+
 ---
 
 ## Step 3: On-Page SEO Optimization
@@ -207,4 +209,5 @@ Listed the cafe on **15 local directories**:
 *This case study is part of my portfolio as an SEO Intern at **Shaligram Infotech, Ahmedabad**.*
 
 *For more case studies or to discuss your project, connect with me on [LinkedIn](https://www.linkedin.com/in/karan-dave-984a883a8).*
+
 📘 *See my [SEO On‑Page Playbook](/seo-playbook/) for a detailed checklist.*
