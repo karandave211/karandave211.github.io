@@ -101,3 +101,4 @@ Despite these limitations, the result is clear enough to be actionable for small
 > *If you want customers to feel good about the price, remove visible fees. If you want them to feel smart, give them a discount code. But for most local businesses, “free delivery” is the safer, stronger bet.*
 
 *This experiment was conducted as part of my BBA programme. For data‑driven marketing advice tailored to your Ahmedabad business, connect with me on [LinkedIn](https://www.linkedin.com/in/karan-dave-984a883a8).*
+*Part of my [Market Research Hub](/market-research-hub/).*
