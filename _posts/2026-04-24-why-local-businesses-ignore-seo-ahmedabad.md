@@ -79,3 +79,4 @@ The Ahmedabad cafe client mentioned in my [SEO audit case study](/seo/ahmedabad-
 Local SEO is not a luxury for Ahmedabad businesses – it is a **competitive necessity**. The gap is not technical skill; it is mindset. Our job as SEO professionals is to educate, demonstrate value with small wins, and speak the language of business owners: **more customers, more calls, more revenue.**
 
 *Have questions about local SEO or want to discuss your business? Connect with me on [LinkedIn](https://www.linkedin.com/in/karan-dave-984a883a8).*
+📘 *See my [SEO On‑Page Playbook](/seo-playbook/) for a detailed checklist.*
