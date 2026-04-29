@@ -137,7 +137,7 @@ Set up 5 alerts today on a topic you care about. Spend 10 minutes each morning s
 Market research doesn’t have to mean expensive surveys or focus groups. Sometimes, the best insights are already being written – you just need to listen.
 
 *Have you used Google Alerts for your own projects? Connect with me on [LinkedIn](https://www.linkedin.com/in/karan-dave-984a883a8) to share your experience.*
-
+*Part of my [Market Research Hub](/market-research-hub/).*
 ---
 
 *This method was developed during my BBA dissertation and internship at Shaligram Infotech, Ahmedabad.*
