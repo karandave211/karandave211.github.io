@@ -1,5 +1,5 @@
 ---
-title: "Keyword Research for a Local Gym: A Step‑by‑Step Walkthrough (+5 Target Keywords)"
+title: "Step‑by‑Step Keyword Research for a Local Gym (+5 Target Keywords)"
 date: 2026-04-27
 schema: Article
 categories:
@@ -8,8 +8,9 @@ categories:
 tags:
   - Keyword Research
   - Local SEO
-excerpt: "How I found 45 keyword ideas, filtered to 5 high‑intent terms, and recommended a page structure. Free tools only."
+excerpt: "Step‑by‑step keyword research for a local gym using free tools. Includes 5 target keywords and search volume data."
 ---
+
 ## The Challenge
 
 A local gym in Ahmedabad wanted to attract more members through organic search but had no idea which keywords to target. Their current website ranked only for the brand name. I conducted a keyword research exercise to identify opportunities that could bring in ready‑to‑join traffic.
@@ -54,6 +55,8 @@ I entered the 45 keywords and focused on:
 - **Search volume** – between 50 and 1000 per month
 - **Competition** – low or medium
 - **Commercial intent** – terms like "join gym", "fees", "personal trainer"
+
+To spot seasonal and rising trends, I also rely on [Google Trends for local keyword research](/market-research/google-trends-local-keyword-research/).
 
 ---
 
@@ -111,4 +114,5 @@ Full impact will be measured at 90 days.
 You don't need expensive tools to find valuable keywords. Start with seed terms, listen to Google's suggestions, and filter by commercial intent. Even implementing 2–3 targeted keywords can bring observable traffic and calls.
 
 *This research was conducted as part of my SEO internship at Shaligram Infotech, Ahmedabad.*
+
 📘 *See my [SEO On‑Page Playbook](/seo-playbook/) for a detailed checklist.*
