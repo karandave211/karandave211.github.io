@@ -53,7 +53,6 @@ Here’s a minimal `LocalBusiness` schema for a freelancer / small business. Add
   "url": "https://karandave211.github.io",
   "logo": "https://karandave211.github.io/assets/images/avatar.jpg",
   "email": "davekaran955@gmail.com",
-  "telephone": "+91 98765 43210",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Ahmedabad",
