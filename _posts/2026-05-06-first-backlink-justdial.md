@@ -4,12 +4,11 @@ date: 2026-05-06
 schema: Article
 categories:
   - SEO
-  - Off-Page SEO
 tags:
   - Backlinks
   - Justdial
   - Link Building
-excerpt: "A step‑by‑step account of how I earned my portfolio’s first backlink using a free Justdial business listing – and how you can too."
+excerpt: "A step-by-step account of how I earned my portfolio's first backlink using a free Justdial business listing – and how you can too."
 ---
 
 Until last week, my portfolio had zero external backlinks. It was technically sound, full of case studies, and optimised for on‑page SEO. But Google’s “Links” report in Search Console was empty.
@@ -65,7 +64,7 @@ I pasted that into the Justdial website field. Now, when someone clicks my listi
 
 ## Step 3: Verification and Waiting
 
-After submitting, Justdial verified my mobile number via OTP. The listing went into a “pending review” state. Within 24 hours, I received an email confirming the listing was live.
+After submitting, Justdial verified my mobile number via OTP. The listing went into a "pending review" state. Within 24 hours, I received an email confirming the listing was live.
 
 I searched for my business name on Justdial, and there it was – with my portfolio link.
 
